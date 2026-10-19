@@ -1,0 +1,60 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+div {
+
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.titulos {
+
+
+    color: greenyellow;
+    background-color: rgb(185, 206, 30);
+
+
+}
+
+.parrafo {
+
+    color: blue;
+    background-color: rgb(11, 11, 147);
+
+}
+
+.tabla {
+
+    color: blueviolet;
+    background-color: rgb(220, 220, 255);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+
+    border: 3px solid blue;
+    padding: 8px;
+    text-align: left;
+
+}
+
+
+span {
+
+    color: red;
+
+
+}

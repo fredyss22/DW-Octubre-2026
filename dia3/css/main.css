@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ .padre {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(78, 78, 210);
+}
+
+.hijo {
+    width: 50%;
+    height: 50%;
+    background-color: bisque;
+}
+
+.padre2 {
+    padding: 50px;
+    border: 2px solid black;
+}
+
+.hijo2 {
+    margin: 50px;
+    border: 50px dotted rgb(114, 80, 80);
+}
+
+.padre2-2 {
+    padding: 50px;
+    border: 2px dashed rgb(217, 145, 12);
+}
+
+.hijo2-2 {
+    margin: 50px;
+    border: 50px double rgb(20, 88, 124);
+} 
+
+.padre3 {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(139, 43, 171);
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+
+}
+
+.hijo3 {
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+}
