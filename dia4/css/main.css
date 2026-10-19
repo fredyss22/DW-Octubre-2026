@@ -1,9 +1,66 @@
 *{
-
-    margin : 0;
+    margin : 10px;
     padding: 0;
     border: 0;
     outline: 0;
-    box-sizing: border-box;
+   /*box-sizing: border-box;*/
+}
+
+.divcero{
+    display: inline;
+    background-color: rgb(20, 162, 20);
+}
+
+.primerspan{
+    display: block;
+    background-color: lightblue;
+
+}
+
+.primerdiv{
+        width: 150px;
+        height: 150px;
+        background-color: rgb(62, 89, 98);
+        display: none;
+}
+
+.segundodiv{
+        width: 150px;
+        height: 150px;
+        background-color: rgb(94, 44, 200);
+}
+
+.tercerdiv{
+        width: 150px;
+        height: 150px;
+        background-color: rgb(203, 20, 20);
+}
+
+
+.div1{
+        width:  100px;
+        height: 100px;
+        background-color: rgb(209, 10, 212);
+        display: inline-block;
+        vertical-align: top;
+
+}
+
+.div2{
+        width: 150px;
+        height: 150px;
+        background-color: rgba(210, 237, 9, 0.918);
+        display: inline-block;
+        vertical-align: top;
+
+}
+
+.div3{
+        width: 180px;
+        height: 180px;
+        background-color: rgb(20, 154, 188);
+        display: inline-block;
+        vertical-align: top;
+
 
 }
