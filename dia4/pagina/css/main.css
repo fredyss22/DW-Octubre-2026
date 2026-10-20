@@ -1,6 +1,6 @@
-*{
+* {
 
-    margin : 0;
+    margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
@@ -8,28 +8,85 @@
 
 }
 
-ul{
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
-}
-
-.menu-navegacion li{
-
-     background-color: #3498db;
+header {
+    height: 75px;
+    background-color: #142B48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
 
 }
-.logo{
 
-    width: 100%;
-    height: 250px;
-    overflow: hidden; 
+.logo {
+    color: white;
+    font-size: 30px;
+    padding: 30px;
 }
-   
-.imagen-banner {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    display: block; 
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+main {
+    min-height: calc(100vh - 125px);
+    padding: 30px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+main h1 {
+    color: #142B48;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.texto {
+    width: 800px;
+    max-width: 300%;
+    margin: auto;
+    text-align: justify;
+    font-size: 18px;
+}
+
+main img {
+    width: 800px;
+    max-width: 300%;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #166534;
+    color: white;
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+
+}
+
+footer {
+    height: 50px;
+    background-color: #142B48;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
 }
