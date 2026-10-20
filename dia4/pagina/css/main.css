@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
+    padding: 30px;
     position: relative;
 
 }
@@ -67,7 +67,7 @@ main p {
 main img {
     width: 800px;
     max-width: 300%;
-    margin: 20px 0;
+    margin: 20px;
 }
 
 button {
