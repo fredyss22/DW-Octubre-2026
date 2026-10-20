@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
 * {
 
     margin: 0;
@@ -5,66 +8,86 @@
     border: 0;
     outline: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #20334B;
+    color: white;
 
 }
 
+/*Estilo header*/
+
 header {
-    height: 75px;
-    background-color: #142B48;
+
+    background-color: #171A21;
+    /*    padding: 20px 40px;*/
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px;
-    position: relative;
 
 }
 
 .logo {
+    font-size: 28px;
+    font-weight: 700;
     color: white;
-    font-size: 30px;
-    padding: 30px;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
     gap: 25px;
 
 }
 
 nav a {
-    color: white;
+    color: #C7D5E0;
     text-decoration: none;
-    font-size: 16px;
+    padding: 10px;
+    display: block;
+}
+
+/*efecto hover mouse*/
+nav a:hover {
+    color: #66C0F4;
 }
 
 
+/*Estilo main*/
+
 main {
-    min-height: calc(100vh - 125px);
- /*   padding: 30px;*/
-    text-align: center;
-    background-color: #f2f2f2;
+    background-color: #20334B;
+    max-width: 1200px;
+    margin: 0 auto;
+    /*padding: 30px 20px;*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
 }
 
 main h1 {
-    color: #142B48;
+    color: #e5e8eb;
     margin-bottom: 20px;
 }
 
 
-.productoizq{
+.productoizq {
 
-    display: flex;
-    flex-direction: column; /* Alinea la foto, el título y el botón hacia abajo */
-    align-items: left; 
-    
+    flex: 1;
+
 }
 
-.centro{
+.centro {
 
-    display: flex;
-    flex-direction: column; /* Alinea la foto, el título y el botón hacia abajo */
-    align-items: center; 
+    flex: 2;
 
 }
 
@@ -79,30 +102,31 @@ button {
 
 }
 
-.productoder{
+.productoder {
 
-    display: flex;
-    flex-direction: column; /* Alinea la foto, el título y el botón hacia abajo */
-    align-items: right; 
+    flex: 1;
 
 }
 
 
 
 
-.imgder{
+.imgder {
 
     display: flex;
-    flex-direction: column; /* Alinea la foto, el título y el botón hacia abajo */
-    align-items: center; 
+    flex-direction: column;
+    /* Alinea la foto, el título y el botón hacia abajo */
+    align-items: center;
 
 
 
 }
+
+/*Estilo footer*/
 
 footer {
     height: 50px;
-    background-color: #142B48;
+    background-color: #1f2e41;
     color: white;
     display: flex;
     justify-content: center;
