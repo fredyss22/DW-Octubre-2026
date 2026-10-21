@@ -2,13 +2,11 @@
 
 
 * {
-
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -20,21 +18,16 @@ body {
 /*Estilo header*/
 
 header {
-
     background-color: #171A21;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-
 }
 
 .logo {
-
     flex-shrink: 0;
-
-
 }
 
 .logo img {
@@ -51,7 +44,6 @@ nav ul {
     justify-content: center;
     align-items: center;
     gap: 8px;
-
 }
 
 nav a {
@@ -71,7 +63,6 @@ nav a:hover {
     background-color: #2A475E;
 }
 
-
 /*Estilo main*/
 
 main {
@@ -79,25 +70,18 @@ main {
     width: 100%;
     margin: 0 auto;
     padding: 30px 20px;
-
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 25px;
 }
 
-
-
 .productoizq {
-
     flex: 1;
-    /* min-width: 0;*/
 }
 
 .centro {
-
     flex: 2;
-    /* min-width: 0;*/
 }
 
 main h1 {
@@ -112,11 +96,9 @@ main img {
     height: auto;
     display: block;
     border-radius: 5px;
-
 }
 
 button {
-
     background-color: #5444b9;
     color: white;
     padding: 12px 20px;
@@ -125,8 +107,6 @@ button {
     font-size: 16px;
     margin-top: 15px;
     transition: background-color 0.3s ease;
-
-
 }
 
 button:hover {
@@ -135,20 +115,13 @@ button:hover {
 }
 
 .productoder {
-
     flex: 1;
-    /* min-width: 0;*/
 }
 
-
 .imgder {
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
-
 }
 
 /*Estilo footer*/
@@ -171,7 +144,6 @@ footer a {
     padding: 5px 8px;
     border-radius: 4px;
     transition: color 0.3s ease,
-
 }
 
 footer a:hover {
