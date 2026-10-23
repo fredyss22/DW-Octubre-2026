@@ -58,13 +58,13 @@ nav a {
 /*efecto hover mouse*/
 
 nav a:hover {
-    color: #66C0F4;
-    background-color: #2A475E;
+    color: #deeef7;
+    background-color: #18d641;
 }
 
 nav a.activo {
-    color: #66C0F4;
-    background-color: #2A475E;
+    color: #deeef7;
+    background-color: #18d64196;
     font-weight: bold;
 }
 
@@ -110,7 +110,7 @@ main img {
 
 
 button {
-    background-color: #18d641;
+    background-color: #18d64196;
     color: white;
     padding: 12px 20px;
     margin: 5px;
@@ -121,7 +121,7 @@ button {
 }
 
 button:hover {
-    background-color: #1880d6;
+    background-color: #18d641;
     transform: translateY(-2px);
 }
 
@@ -207,6 +207,8 @@ footer a:hover {
 .todas-descargas h2 {
 
     text-align: center;
+    font-size: 20px;
+
 }
 
 .fila-descargas {
@@ -219,14 +221,6 @@ footer a:hover {
 .juego-descarga {
 
     align-items: center;
-}
-
-.juego-descarga h2 {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
 }
 
 .juego-descarga img {
@@ -242,7 +236,7 @@ footer a:hover {
 }
 
 .juego-descarga button {
-    margin: 8px 0 0;
+    margin: 8px;
 }
 
 
