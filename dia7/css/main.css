@@ -193,11 +193,19 @@ footer a:hover {
     margin-bottom: 35px;
 }
 
-.descarga2 {
+.paginaDescargas {
 
-    display: inline-block;
-
+    display: block;
+    padding: 35px 4%;
 }
+
+.fila-descargas {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    margin-bottom: 25px;
+}
+
 
 /*Estilo página presentación*/
 
