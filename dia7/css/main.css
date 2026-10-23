@@ -110,7 +110,7 @@ main img {
 
 
 button {
-    background-color: #5444b9;
+    background-color: #18d641;
     color: white;
     padding: 12px 20px;
     margin: 5px;
@@ -121,11 +121,11 @@ button {
 }
 
 button:hover {
-    background-color: #4935F0;
+    background-color: #1880d6;
     transform: translateY(-2px);
 }
 
-.botonesCentro {
+.centro .botonesCentro {
 
     display: flex;
     justify-content: center;
@@ -183,6 +183,20 @@ footer a {
 footer a:hover {
     color: #deeef7;
     background-color: #18d641;
+}
+
+/*Estili página descargas*/
+
+.introDescargas {
+
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.descarga2 {
+
+    display: inline-block;
+
 }
 
 /*Estilo página presentación*/

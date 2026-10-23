@@ -1,0 +1,234 @@
+/* ===== PÁGINA DE CATEGORÍAS ===== */
+
+.pagina-categorias {
+    display: block;
+    min-height: 75vh;
+    padding: 45px 5%;
+    background:
+        radial-gradient(ellipse at top, #263e5e 0%, #18283b 65%);
+}
+
+.intro-categorias {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.intro-categorias h1 {
+    font-size: clamp(28px, 4vw, 40px);
+    margin-bottom: 12px;
+}
+
+.intro-categorias p {
+    color: #c7d5e0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Tres columnas y dos filas */
+
+.grid-categorias {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* Tarjetas */
+
+.tarjeta {
+    --color-luz: #66c0f4;
+
+    position: relative;
+    min-height: 220px;
+    padding: 28px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+    background: linear-gradient(145deg,
+            #243b55,
+            #111d2e);
+
+    border: 1px solid color-mix(in srgb,
+            var(--color-luz) 55%,
+            transparent);
+
+    border-radius: 16px;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease,
+        background 0.35s ease;
+}
+
+/* Brillo ambiental */
+
+.tarjeta::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: -100px;
+    right: -70px;
+
+    background: var(--color-luz);
+    opacity: 0.12;
+    filter: blur(55px);
+    border-radius: 50%;
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+.contenido-tarjeta {
+    position: relative;
+    z-index: 1;
+}
+
+.icono {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+    margin-bottom: 14px;
+
+    border: 1px solid var(--color-luz);
+    border-radius: 50%;
+
+    color: var(--color-luz);
+    font-size: 30px;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.tarjeta h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: #c7d5e0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.flecha {
+    position: absolute;
+    right: 18px;
+    bottom: 14px;
+
+    color: var(--color-luz);
+    font-size: 25px;
+
+    transition: transform 0.35s ease;
+}
+
+/* Efecto hover inspirado en CodePen */
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-luz);
+
+    box-shadow:
+        0 0 12px color-mix(in srgb,
+            var(--color-luz) 30%,
+            transparent),
+        0 12px 30px #0005;
+}
+
+.tarjeta:hover::before {
+    opacity: 0.35;
+    transform: scale(1.5);
+}
+
+.tarjeta:hover .icono {
+    transform: scale(1.1) rotate(-8deg);
+    background: color-mix(in srgb,
+            var(--color-luz) 12%,
+            transparent);
+    box-shadow: 0 0 18px color-mix(in srgb,
+            var(--color-luz) 40%,
+            transparent);
+}
+
+.tarjeta:hover .flecha {
+    transform: translate(4px, -4px);
+}
+
+/* Color diferente por categoría */
+
+.categoria-accion {
+    --color-luz: #2997ff;
+}
+
+.categoria-aventura {
+    --color-luz: #b05cff;
+}
+
+.categoria-rpg {
+    --color-luz: #ffad55;
+}
+
+.categoria-deportes {
+    --color-luz: #21e6a1;
+}
+
+.categoria-estrategia {
+    --color-luz: #16d9ef;
+}
+
+.categoria-simulacion {
+    --color-luz: #ff5da8;
+}
+
+/* Adaptación a tablet y móvil */
+
+@media (max-width: 900px) {
+    .grid-categorias {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .pagina-categorias {
+        padding: 30px 18px;
+    }
+
+    .grid-categorias {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .tarjeta {
+        min-height: 190px;
+    }
+}
+
+/* Respetar preferencias de movimiento */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .tarjeta,
+    .tarjeta::before,
+    .icono,
+    .flecha {
+        transition: none;
+    }
+
+    .tarjeta:hover {
+        transform: none;
+    }
+}
