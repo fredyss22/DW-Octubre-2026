@@ -83,11 +83,15 @@ main {
 
 .productoizq {
     flex: 1;
+    margin: 0 auto;
 }
 
 .centro {
     flex: 2;
+    margin: 0 auto 20px;
 }
+
+
 
 main h1 {
     text-align: center;
@@ -102,6 +106,8 @@ main img {
     display: block;
     border-radius: 5px;
 }
+
+
 
 button {
     background-color: #5444b9;
@@ -119,9 +125,32 @@ button:hover {
     transform: translateY(-2px);
 }
 
-.productoder {
-    flex: 1;
+.botonesCentro {
+
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+
 }
+
+
+.productoder h1 {
+    margin-bottom: 15px;
+}
+
+.productoder {
+    width: 100%;
+    flex: 1;
+    margin: 15px;
+
+}
+
+.productoder p {
+    text-align: left;
+    color: #d7e0ea;
+}
+
 
 .imgder {
     display: flex;
@@ -152,25 +181,25 @@ footer a {
 }
 
 footer a:hover {
-    color: #66C0F4;
-    background-color: #2A475E;
+    color: #deeef7;
+    background-color: #18d641;
 }
 
 /*Estilo página presentación*/
 
-.descripciongeneral{
+.descripciongeneral {
 
-        flex: 2;
-        align-items: center;
-   
+    flex: 2;
+    align-items: center;
+
 }
 
-.descripcion{
+.descripcion {
     text-align: right;
 }
 
-.imgdescripcion{
+.imgdescripcion {
 
-display: flex;
+    display: flex;
 
 }
