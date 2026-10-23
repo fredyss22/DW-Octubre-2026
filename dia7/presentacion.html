@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorías | Game Review</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/presentacion.css">
+
 </head>
 
 <body>
@@ -27,9 +29,9 @@
         </nav>
     </header>
 
-    <main>
+    <main class="presentacionweb">
         <h1>Presentación</h1>
-        <div class="presentacionweb">
+        <div class="filaPresentación">
             <img src="images/logo2.png">
 
             <p>
@@ -45,42 +47,43 @@
             </p>
         </div>
 
-        <div>
+        <div filaPresentacion filados>
 
+            <p>
+                index.html: es la página principal.
+                categorias.html: muestra las categorías de videojuegos mediante tarjetas codepen.
+                descargar.html: organiza imágenes de juegos y botones que llevan a una página externa de Steam.
+                presentacion.html: contiene la presentación del proyecto.
+                css/main.css: reúne los estilos generales compartidos.
+                css/categorias.css: contiene estilos específicos para la página de categorías.
+                images/: almacena las imágenes y el logotipo.
 
-            <div class="descripciongeneral">
-
-                <p class="descripcion">
-                    Siente un control superior en todos los modos de EA SPORTS FC 27.
-
-                    Disfruta de una autenticidad sin igual con más de 21 000 jugadores de más de 800 clubs y selecciones
-                    nacionales, en más de 130 estadios y 35 ligas.
-
-                </p>
-                <img src="images/img3.png" class="imgdescripcion">
-            </div>
-
-            <div class="descripciongeneral">
-
-                <p class="descripcion">
-                    Siente un control superior en todos los modos de EA SPORTS FC 27.
-
-                    Disfruta de una autenticidad sin igual con más de 21 000 jugadores de más de 800 clubs y selecciones
-                    nacionales, en más de 130 estadios y 35 ligas.
-
-                </p>
-                <img src="images/img3.png" class="imgdescripcion">
-            </div>
-
+            </p>
+            <img src="images/estructura.png">
         </div>
+
+        <div class="filaPresentacion filatres">
+
+
+            <img src="images/flexbox.webp">
+
+            <p>
+                Se puso en práctica el modelo de diseñlo Flexbox para distribuir y alinear elementos en una misma
+                dirección también para centrar los botones, En descargar.html utilizo contenedores con la clase
+                fila-descargas. En main.css están organizados con CSS Grid: Esta técnica distribuye los elementos en
+                tres columnas por fila. Se utilizaron estilos adicionales por ejemplo el uso de la propiedades hover.
+
+
+            </p>
+        </div>
+
+
 
 
         <div class="urlgithub">
             <a href="https://github.com/" target="_blank">
                 <img src="images/logogithub.png">
             </a>
-        </div>
-
         </div>
 
     </main>

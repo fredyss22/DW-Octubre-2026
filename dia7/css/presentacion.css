@@ -1,0 +1,36 @@
+.presentacionweb h1 {
+
+    text-align: center0;
+
+}
+
+main.presentacionweb {
+
+    display: block;
+
+}
+
+.presentacionweb h1 {
+    text-align: center;
+
+
+}
+
+.filaPresentación {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.filaPresentación img {
+
+    width: 45%;
+
+}
+
+.filaPresentación p {
+
+    flex: 1;
+    text-align: left;
+}

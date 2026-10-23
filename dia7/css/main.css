@@ -191,7 +191,7 @@ footer a:hover {
     background-color: #18d641;
 }
 
-/*Estili página descargas*/
+/*Estilo página descargas*/
 
 .introDescargas {
     width: 100%;
@@ -243,24 +243,4 @@ footer a:hover {
 
 .juego-descarga button {
     margin: 8px;
-}
-
-
-/*Estilo página presentación*/
-
-.descripciongeneral {
-
-    flex: 2;
-    align-items: center;
-
-}
-
-.descripcion {
-    text-align: right;
-}
-
-.imgdescripcion {
-
-    display: flex;
-
 }
