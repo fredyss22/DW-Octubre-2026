@@ -36,6 +36,12 @@ header {
     height: auto;
 }
 
+.titulo {
+    color: #18d641;
+
+
+}
+
 nav ul {
     display: flex;
     list-style: none;
