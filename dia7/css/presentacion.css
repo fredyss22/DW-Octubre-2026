@@ -8,7 +8,7 @@ main.presentacionweb {
     background-color: #20334B;
 }
 
-/* Cada fila contiene imagen y texto */
+/*  imagen y texto */
 main.presentacionweb .filaPresentacion {
     display: flex;
     flex-direction: row;
@@ -17,7 +17,7 @@ main.presentacionweb .filaPresentacion {
     width: 100%;
 }
 
-/* Tamaño de las imágenes de las filas */
+/* Imágenes de las filas */
 main.presentacionweb .filaPresentacion img {
     width: 30%;
     object-fit: contain;
