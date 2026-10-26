@@ -244,3 +244,14 @@ footer a:hover {
 .juego-descarga button {
     margin: 8px;
 }
+
+/*Estilo ubicacion*/
+
+main.ubicacion  {
+
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
