@@ -36,10 +36,8 @@ header {
     height: auto;
 }
 
-.titulo {
+.titulo__logo {
     color: #18d641;
-
-
 }
 
 nav ul {
@@ -130,13 +128,21 @@ button:hover {
     background-color: #18d641;
     transform: translateY(-2px);
 }
-
+/*
 .centro .botonesCentro {
 
     display: flex;
     justify-content: center;
     gap: 12px;
 
+
+}*/
+
+.centro__botones{
+
+    display: flex;
+    justify-content: center;
+    gap: 12px;
 
 }
 
