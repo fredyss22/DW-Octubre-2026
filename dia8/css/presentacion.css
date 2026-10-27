@@ -1,0 +1,68 @@
+main.presentacionweb {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 3.5%;
+    background-color: #20334B;
+}
+
+/*  imagen y texto */
+main.presentacionweb .filaPresentacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Imágenes de las filas */
+main.presentacionweb .filaPresentacion img {
+    width: 30%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Tamaño del texto */
+main.presentacionweb .filaPresentacion p {
+    width: 30%;
+    color: #f4f6fa;
+    font-size: 18px;
+    line-height: 2;
+}
+
+main.presentacionweb .filados {
+    flex-direction: row;
+}
+
+main.presentacionweb .filatres {
+    flex-direction: row;
+}
+
+/* GitHub centrado*/
+main.presentacionweb .presentacion-github {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+main.presentacionweb .presentacion-github a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.2s;
+}
+
+main.presentacionweb .presentacion-github img {
+    width: 95px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+main.presentacionweb .presentacion-github a:hover {
+    transform: scale(1.08);
+}

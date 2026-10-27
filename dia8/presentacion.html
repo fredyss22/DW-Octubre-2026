@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación | Game Review</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/presentacion.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo de Game Review">
+            <h1 class="titulo">Game Review</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" >Inicio</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+                <li><a href="descargar.html">Descargas</a></li>
+                <li><a href="presentacion.html" class="activo">Presentación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="presentacionweb">
+        <div class="filaPresentacion">
+            <img src="images/logo2.png">
+
+            <p>
+                La página web se llama Game Review y está desarrollada con HTML y CSS. Está organizada en varias
+                páginas: Inicio, Categorías, Descargas y Presentación. También cuenta con una carpeta de imágenes y una
+                carpeta CSS donde guardo los estilos.
+                Para organizar los elementos utilizo Flexbox, en la cabecera y en la alineación de los botones. También
+                utilizo CSS Grid en la página de descargas para distribuir los juegos en columnas.
+
+                Para reutilizar los estilos, tengo un archivo principal llamado main.css, que contiene los colores, la
+                navegación, los botones y el pie de página. Además, utilizo una hoja de estilos adicional para las
+                categorías.
+            </p>
+        </div>
+
+        <div class=" filaPresentacion filados" S>
+
+            <p>
+                La página está conformada por index.html: es la página principal.
+                categorias.html: muestra las categorías de videojuegos mediante tarjetas codepen.
+                descargar.html: organiza imágenes de juegos y botones que llevan a una página externa de Steam.
+                presentacion.html: contiene la presentación del proyecto.
+                css/main.css: reúne los estilos generales compartidos.
+                css/categorias.css: contiene estilos específicos para la página de categorías.
+                images/: almacena las imágenes y el logotipo.
+
+            </p>
+            <img src="images/estructura.png">
+        </div>
+
+        <div class="filaPresentacion filatres">
+
+            <img src="images/flexbox.webp">
+
+            <p>
+                Se puso en práctica el modelo de diseñlo Flexbox para distribuir y alinear elementos en una misma
+                dirección también para centrar los botones, En descargar.html utilizo contenedores con la clase
+                fila-descargas. En main.css están organizados con CSS Grid: Esta técnica distribuye los elementos en
+                tres columnas por fila. Se utilizaron estilos adicionales por ejemplo el uso de la propiedades hover.
+
+
+            </p>
+        </div>
+
+        <div class="presentacion-github">
+            <a href="https://github.com">
+                <img src="images/logogithub.png">
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerlink">
+            <p class="footerinfo">Game Review - 2026 - Todo en juegos</p>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.tiktok.com/">TikTok</a>
+        </div>
+    </footer>
+</body>
+
+</html>
