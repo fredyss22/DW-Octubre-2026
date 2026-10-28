@@ -1,0 +1,63 @@
+/* Pagina nivel 1*/
+
+/* .caja_nivel1-1{
+    width: 600px;
+
+} */
+
+.titulo1__nivel1{
+
+font-size: 100px;
+color: aqua;
+
+}
+
+.titulo2__nivel1{
+
+    font-size: 6em;
+    color: aquamarine;
+}
+
+.titulo3__nivel1{
+
+    font-size: 5rem;
+    color: blue;
+}
+
+.parrafo1__nivel1{
+
+font-size: 60%;
+color: blueviolet;
+
+}
+
+.parrafo2__nivel1{
+
+font-size: 4vw;
+color: brown;
+
+
+}
+
+.parrafo3__nivel1{
+
+font-size: 3vh;
+color: chartreuse;
+
+}
+
+.boton1__nivel1{
+
+    line-height: 20%;
+
+}
+
+.boton2__nivel1{
+
+
+}
+
+.boton3__nivel1{
+
+
+}
