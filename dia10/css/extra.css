@@ -3,7 +3,6 @@
     padding: 0;
     border: 0;
     outline: 0;
-
 }
 
 body {
@@ -14,7 +13,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
 
 /*Estilo header*/
 
@@ -51,7 +49,33 @@ nav a:hover {
     background-color: #767776;
 }
 
+/*main*/
+
+
+.titulo,
+.centro h1 {
+    text-align: center;
+    max-width: 100%;
+    font-family: "Roboto Flex", "Roboto", sans-serif;
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    font-weight: 500;
+    font-stretch: 100%;
+    line-height: 1.1;
+}
+
+.texto1 {
+    width: 100%;
+    max-width: 60ch;
+    margin: 1.5em auto;
+    font-family: "Roboto Flex", "Roboto", sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-weight: 400;
+    font-stretch: 100%;
+    line-height: 1.5em;
+}
+
 button {
+
     background-color: #7b3eec96;
     color: white;
     padding: 12px 20px;
@@ -64,9 +88,9 @@ button {
 
 button:hover {
     background-color: #e93333;
-    transform: translateY(-2px);
 }
 
+/*Footer*/
 footer {
     height: 100px;
     background-color: #000000;
@@ -76,7 +100,6 @@ footer {
     align-items: center;
     font-size: 14px;
 }
-
 
 footer a {
     display: inline-block;
