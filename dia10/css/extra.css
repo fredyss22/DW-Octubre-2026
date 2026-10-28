@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #090d13;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/*Estilo header*/
+
+header {
+    background-color: black;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+nav a {
+    color: #C7D5E0;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    color: #deeef7;
+    background-color: #767776;
+}
+
+button {
+    background-color: #7b3eec96;
+    color: white;
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e93333;
+    transform: translateY(-2px);
+}
+
+footer {
+    height: 100px;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+
+footer a {
+    display: inline-block;
+    color: #C7D5E0;
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    transition: color 0.3s ease,
+}
