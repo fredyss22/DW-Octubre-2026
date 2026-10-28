@@ -1,10 +1,5 @@
 /* Pagina nivel 1*/
 
-/* .caja_nivel1-1{
-    width: 600px;
-
-} */
-
 .titulo1__nivel1{
 
 font-size: 100px;
@@ -47,17 +42,66 @@ color: chartreuse;
 }
 
 .boton1__nivel1{
-
-    line-height: 20%;
-
+    font-size: 1000%;
 }
 
 .boton2__nivel1{
 
-
+    font-size: 10vw;
 }
 
 .boton3__nivel1{
+        font-size: 10vh;
 
+}
+
+/*1-2*/
+
+.caja__cambio-medida{
+
+    width: 20px;
+    font-size: 20px;
+    background-color: blueviolet;
+
+}
+
+.caja__cambio-medida-parrafo{
+
+    font-size: 4em;
+
+}
+
+/*1-3*/
+
+.caja_nivel1-1-2 .caja__valor{
+
+    width: 50vw;
+    padding:calc(2rem + 5px) ;
+    background-color: cadetblue;
+
+}
+
+.caja_nivel1-1-2 .caja__calculo h1{
+
+    font-size: calc(2vw + 10px);
+}
+
+/* Pagina nivel 2*/
+
+.nivel__dos-1{
+
+    max-width: 90vh;
+    line-height: 4em;
+}
+
+/*2-2*/
+.nivel__dos-2 h1{
+
+    font-size: 5vw;
+
+}
+.nivel__dos-2 p{
+
+    font-size: 2vh;
 
 }
