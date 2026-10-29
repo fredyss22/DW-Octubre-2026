@@ -1,0 +1,41 @@
+*{
+
+    margin : 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+.maincontenedor{
+
+    width: 150px;
+    background-color: aqua;
+}
+
+.seccioncontenedor{
+    width: 150px;
+
+    background-color: blue;
+}
+
+.primerarticulo{
+
+    width: 150px;
+
+background-color: rgb(110, 199, 88);
+
+}
+
+.articlecontenedor{
+    width: 150px;
+
+    background-color: burlywood;
+
+}
+
+.segundosecction{
+    width: 150px;
+
+    background-color: chocolate;
+}
