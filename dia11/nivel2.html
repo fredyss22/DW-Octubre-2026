@@ -1,40 +1,55 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' href='css/main.css'>
-    <script src='js/main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las estatuas más grandes del mundo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #222; }
+        main, aside, section, article, footer { padding: 20px; }
+        main { max-width: 1000px; margin: 20px auto; }
+        figure { margin: 20px 0; }
+        figure img { display: block; width: 100%; max-width: 650px; height: auto; border-radius: 8px; }
+        figcaption { margin-top: 8px; color: #555; }
+        aside { background: #f1f1f1; border-radius: 8px; margin-top: 20px; }
+        blockquote { margin: 20px 0; padding: 12px 18px; border-left: 4px solid #777; background: #f5f5f5; }
+        mark { background: #fff0a8; }
+        footer { text-align: center; background: #eee; margin-top: 30px; }
+        a:focus { outline: 3px solid #2673b8; outline-offset: 3px; }
+    </style>
 </head>
-
 <body>
-
-    <header>
-        <header>
-            <div class="logo">
-                <h1 class="titulo"> Página Responsive</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nivel1.html">Nivel 1</a></li>
-                    <li><a href="nivel2.html">Nivel 2</a></li>
-                    <li><a href="nivel3.html">Nivel 3</a></li>
-
-                </ul>
-            </nav>
-        </header>
-    </header>
-    <main>
-    </main>
-
-    <footer>
-
-    </footer>
-
+<header role="banner">
+    <div class="logo">
+        <h1 class="titulo">Las estatuas más grandes del mundo</h1>
+    </div>
+    <nav role="navigation" aria-label="Navegación principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nivel1.html">Nivel 1</a></li>
+            <li><a href="nivel2.html">Nivel 2</a></li>
+            <li><a href="nivel3.html">Nivel 3</a></li>
+        </ul>
+    </nav>
+</header>
+<main role="main">
+    <h2>Nivel 2: organización semántica y accesibilidad</h2>
+    <section>
+        <h2>Una estatua impresionante</h2>
+        <article>
+            <h3>Estatua de la Unidad</h3>
+            <figure>
+                <img src="https://images.weserv.nl/?url=upload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F07%2FStatue_of_Unity.jpg%2F960px-Statue_of_Unity.jpg&output=webp" alt="Vista completa de la Estatua de la Unidad en India">
+                <figcaption>La Estatua de la Unidad mide 182 metros y está dedicada a Sardar Patel.</figcaption>
+            </figure>
+            <p>Esta obra se encuentra en el estado de Gujarat, India. Es una de las construcciones escultóricas más conocidas del mundo.</p>
+            <p>Su altura la convierte en una <mark>de las estatuas más altas del planeta</mark>.</p>
+        </article>
+    </section>
+</main>
+<footer role="contentinfo">
+    <p>Actividad de HTML semántico - Día 11</p>
+</footer>
 </body>
-
 </html>
