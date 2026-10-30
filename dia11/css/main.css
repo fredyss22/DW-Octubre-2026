@@ -40,3 +40,68 @@ nav a:hover {
     color: #deeef7;
     background-color: #767776;
 }
+
+/* Estilos de las páginas de la actividad del día 11 */
+.pagina-dia11 {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+.pagina-dia11 main,
+.pagina-dia11 aside,
+.pagina-dia11 section,
+.pagina-dia11 article,
+.pagina-dia11 footer {
+    padding: 20px;
+}
+
+.pagina-dia11 main {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.pagina-dia11 figure {
+    margin: 20px 0;
+}
+
+.pagina-dia11 figure img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.pagina-dia11 figcaption {
+    margin-top: 8px;
+    color: #555;
+}
+
+.pagina-dia11 aside {
+    background: #f1f1f1;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.pagina-dia11 blockquote {
+    margin: 20px 0;
+    padding: 12px 18px;
+    border-left: 4px solid #777;
+    background: #f5f5f5;
+}
+
+.pagina-dia11 mark {
+    background: #fff0a8;
+}
+
+.pagina-dia11 footer {
+    text-align: center;
+    background: #eee;
+    margin-top: 30px;
+}
+
+.pagina-dia11 a:focus {
+    outline: 3px solid #2673b8;
+    outline-offset: 3px;
+}
