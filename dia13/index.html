@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prácticas de posicionamiento CSS: fixed, sticky y centrado.">
+  <title>Día 12 · Posicionamiento CSS</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="pagina-dia11 pagina-indice">
+  <header class="site-header">
+    <a class="logo" href="index.html">AULA <span>CSS</span></a>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="nivel1.html">Nivel 1</a></li>
+        <li><a href="nivel2.html">Nivel 2</a></li>
+        <li><a href="nivel3.html">Nivel 3</a></li>
+        <li><a href="extra.html">Extra cultura</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="indice-main">
+    <section class="indice-hero">
+      <p class="eyebrow">DESARROLLO WEB · DÍA 12</p>
+      <h1>Posicionamiento <em>CSS</em></h1>
+      <p>Recorrido práctico por las propiedades fixed, sticky y las técnicas para centrar elementos.</p>
+    </section>
+
+    <section class="documentacion" aria-labelledby="guia-title">
+      <p class="eyebrow">GUÍA DE LA ACTIVIDAD</p>
+      <h2 id="guia-title">Qué encontrarás en cada apartado</h2>
+      <article class="guia-card">
+        <span class="guia-numero">01</span>
+        <div><h3>Nivel 1 · Posicionamiento básico</h3><p>Ejercicios iniciales de posicionamiento CSS.</p><a href="nivel1.html">Ir al nivel 1 →</a></div>
+      </article>
+      <article class="guia-card">
+        <span class="guia-numero">02</span>
+        <div><h3>Nivel 2 · Menú fijo y elementos pegajosos</h3>
+          <p><strong>Punto 1:</strong> menú superior con <code>position: fixed</code>.</p>
+          <p><strong>Punto 2:</strong> encabezado que permanece visible con <code>position: sticky; top: 100px</code>.</p>
+          <a href="nivel2.html">Ir al nivel 2 →</a>
+        </div>
+      </article>
+      <article class="guia-card">
+        <span class="guia-numero">03</span>
+        <div><h3>Nivel 3 · Posicionamiento avanzado</h3>
+          <p><strong>Punto 1:</strong> centrar con <code>position: absolute</code>, <code>top: 50%</code> y <code>left: 50%</code>.</p>
+          <p><strong>Punto 2:</strong> corregir el centro con <code>transform: translate(-50%, -50%)</code>.</p>
+          <p><strong>Punto 3:</strong> centrar horizontalmente con <code>margin: 0 auto</code>.</p>
+          <a href="nivel3.html">Ir al nivel 3 →</a>
+        </div>
+      </article>
+      <article class="guia-card guia-extra">
+        <span class="guia-numero">★</span>
+        <div><h3>Extra · Portada de noticias culturales</h3>
+          <p>Diseño editorial con cabecera sticky, noticias y aviso de cookies fijo en la parte inferior (<code>position: fixed</code>).</p>
+          <a href="extra.html">Ver la portada →</a>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer><p>Actividad de posicionamiento CSS · Día 12</p></footer>
+</body>
+</html>
