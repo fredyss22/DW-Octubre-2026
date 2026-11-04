@@ -48,6 +48,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    scroll-snap-type: mandatory;
 }
 
 
@@ -55,6 +56,7 @@ nav a:hover {
     max-width: 1000px;
     margin: 20px auto;
     flex: 1;
+     height: 300vh;
 }
 
 .pagina-dia11 a:focus {
@@ -67,3 +69,82 @@ footer {
     margin-top: 30px;
     padding: 15px;
 }
+/*Diseño página dia 13*/
+.contenedor__principal{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+
+}
+
+.contenedor__principal p{
+
+    color:#2673b8;
+    position: relative;
+    width: 50vw;
+}
+
+.contenedor__principal parrafo1__principaln1-1 p{
+
+    position: relative;
+    right: 25px;
+    bottom: 50px;
+
+}
+
+.contenedor__principal parrafo1__principaln1-1 p{
+
+    position: relative;
+    left: 25vw;
+    top: 50px;
+    color: brown;
+
+
+}
+
+/*nivel 2*/
+.contenedor__nivel2{
+
+    position: relative;
+
+}
+
+.posicion_nivel2{
+    position: absolute;
+
+}
+
+.primer__div-izquierda{
+    position: relative;
+    background-color: #b91f1f;
+    top: 0;
+    left: 0;
+
+}
+
+.segundo__div-abajo{
+    position: relative;
+    background-color: #2673b8;
+    bottom: 0;
+    left: 0;
+
+}
+
+.tercer__div-centro{
+    position: relative;
+    background-color: rgb(215, 39, 192);
+}
+
+.cuarta__div-derecha{
+    position: relative;
+    background-color: blue;
+    bottom: 0;
+    left: 0;
+}
+
+.quinta__div-esquina{
+    position: relative;
+    background-color: #14c414;
+    bottom: 0;
+    right: 0;
+}
+
