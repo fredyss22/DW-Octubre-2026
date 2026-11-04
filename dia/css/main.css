@@ -41,25 +41,30 @@ nav a:hover {
     background-color: #767776;
 }
 
-/* Estilos de las páginas de la actividad del día 11 */
 .pagina-dia11 {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
 
 .pagina-dia11 main {
     max-width: 1000px;
     margin: 20px auto;
-}
-
-.pagina-dia11 footer {
-    text-align: center;
-    background: #eee;
-    margin-top: 30px;
+    flex: 1;
 }
 
 .pagina-dia11 a:focus {
     outline: 3px solid #2673b8;
     outline-offset: 3px;
+}
+
+footer {
+    text-align: center;
+    background: #eee;
+    margin-top: 30px;
+    padding: 15px;
 }
