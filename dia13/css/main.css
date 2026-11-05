@@ -56,42 +56,53 @@ nav a:hover {
     max-width: 1000px;
     margin: 20px auto;
     flex: 1;
-     height: 300vh;
+    height: 300vh;
 }
 
 .pagina-dia11 a:focus {
     outline: 3px solid #2673b8;
     outline-offset: 3px;
 }
+
 footer {
     text-align: center;
     background: #eee;
     margin-top: 30px;
     padding: 15px;
 }
+
 /*Diseño página dia 13*/
-.contenedor__principal{
-    flex: 0 0 100%;
-    scroll-snap-align: start;
+body {
+    height: 300vh;
 
 }
 
-.contenedor__principal p{
+.contenedor__principal {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    align-items: center;
 
-    color:#2673b8;
+}
+
+.contenedor__principal p {
+
+    color: #2673b8;
     position: relative;
     width: 50vw;
 }
 
-.contenedor__principal parrafo1__principaln1-1 p{
+/*1-1*/
+
+.parrafo1__principaln1-1 {
 
     position: relative;
     right: 25px;
     bottom: 50px;
+    color: teal;
 
 }
 
-.contenedor__principal parrafo1__principaln1-1 p{
+.parrafo2__principaln1-2 {
 
     position: relative;
     left: 25vw;
@@ -102,49 +113,65 @@ footer {
 }
 
 /*nivel 2*/
-.contenedor__nivel2{
-
+.contenedor__nivel2 {
     position: relative;
 
 }
 
-.posicion_nivel2{
+.posicion_nivel2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.posicion_nivel2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.primer__div-izquierda {
     position: absolute;
-
-}
-
-.primer__div-izquierda{
-    position: relative;
     background-color: #b91f1f;
+    /* inset: 0 0 auto 0; */
     top: 0;
     left: 0;
 
 }
 
-.segundo__div-abajo{
-    position: relative;
+.segundo__div-abajo {
+    position: absolute;
     background-color: #2673b8;
+    /* inset: auto auto 0 0; */
     bottom: 0;
     left: 0;
 
 }
 
-.tercer__div-centro{
-    position: relative;
+.tercer__div-centro {
+    position: absolute;
     background-color: rgb(215, 39, 192);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
-.cuarta__div-derecha{
-    position: relative;
+.cuarta__div-derecha {
+    position: absolute;
     background-color: blue;
-    bottom: 0;
-    left: 0;
-}
-
-.quinta__div-esquina{
-    position: relative;
-    background-color: #14c414;
-    bottom: 0;
+    /* inset: 0 0 auto auto; */
+    top: 0;
     right: 0;
 }
 
+.quinta__div-esquina {
+    position: absolute;
+    background-color: #14c414;
+    /* inset: auto 0 0 auto; */
+    bottom: 0;
+    right: 0;
+}
