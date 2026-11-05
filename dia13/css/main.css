@@ -77,7 +77,7 @@ nav a:hover {
 
 footer {
     text-align: center;
-    background: #eee;
+    background: #858484;
     margin-top: 30px;
     padding: 15px;
 }
@@ -200,8 +200,10 @@ body {
 
 /*pagina*/
 
-body.pagina-dia11 {
-    background-color: #c095f1;
+body.pagina-dia13 {
+    background-color: #d3bcec;
+    font-family: Arial, sans-serif;
+
 }
 
 .uso-sticky {

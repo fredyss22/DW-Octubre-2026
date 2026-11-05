@@ -82,15 +82,100 @@ footer {
 .padre1 {
     background-color: #2673b8;
     position: relative;
+    width: 300px;
+    height: 300px;
     left: 20px;
-    bottom: 10px;
+    top: 10px;
 }
 
 .padre2 {
 
     background-color: blueviolet;
     position: absolute;
+    width: 300px;
+    height: 300px;
     top: 0;
     right: 0;
 
 }
+
+/*2*/
+
+header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.pagina-dia11 main {
+    padding-top: 100px;
+}
+
+.encabezado-sticky {
+    background-color: orange;
+    padding: 20px;
+    position: sticky;
+    top: 100px;
+    z-index: 10;
+}
+
+/*3*/
+.contenedor-centro1 {
+    width: 100px;
+    height: 400px;
+    background-color: #767776;
+    position: relative;
+}
+
+.espacio-centro1 {
+
+    width: 200px;
+    height: 150px;
+    background-color: #222;
+    color: aliceblue;
+    text-align: center;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}
+
+.contenedor-centro2 {
+    width: 100px;
+    height: 400px;
+    background-color: #669266;
+    position: relative;
+}
+
+.espacio-centro2 {
+
+    width: 200px;
+    height: 150px;
+    background-color: #8a3030;
+    color: rgb(244, 245, 247);
+    text-align: center;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.espacio-centro3 {
+    width: 300px;
+    height: 150px;
+    background-color: orange;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+}
+
+/*pagina extra*/
