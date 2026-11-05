@@ -17,6 +17,11 @@ header {
     gap: 20px;
 }
 
+.titulo {
+
+    color: #dde6df;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -59,6 +64,12 @@ nav a:hover {
     height: 300vh;
 }
 
+.pagina-dia11 main.contenedor__nivel2 {
+    max-width: none;
+    height: auto;
+    margin: 0;
+}
+
 .pagina-dia11 a:focus {
     outline: 3px solid #2673b8;
     outline-offset: 3px;
@@ -86,7 +97,7 @@ body {
 
 .contenedor__principal p {
 
-    color: #2673b8;
+    color: #12722a;
     position: relative;
     width: 50vw;
 }
@@ -115,6 +126,8 @@ body {
 /*nivel 2*/
 .contenedor__nivel2 {
     position: relative;
+    width: 100%;
+    flex: 1;
 
 }
 
@@ -136,42 +149,134 @@ body {
 .primer__div-izquierda {
     position: absolute;
     background-color: #b91f1f;
-    /* inset: 0 0 auto 0; */
-    top: 0;
-    left: 0;
+    inset: 0 0 auto 0;
 
 }
 
 .segundo__div-abajo {
     position: absolute;
     background-color: #2673b8;
-    /* inset: auto auto 0 0; */
-    bottom: 0;
-    left: 0;
+    inset: auto auto 0 0;
 
 }
 
 .tercer__div-centro {
     position: absolute;
     background-color: rgb(215, 39, 192);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: 50% auto auto 50%;
 
 }
 
 .cuarta__div-derecha {
     position: absolute;
     background-color: blue;
-    /* inset: 0 0 auto auto; */
-    top: 0;
-    right: 0;
+    inset: 0 0 auto auto;
+
 }
 
 .quinta__div-esquina {
     position: absolute;
     background-color: #14c414;
-    /* inset: auto 0 0 auto; */
-    bottom: 0;
-    right: 0;
+    inset: auto 0 0 auto;
+
+}
+
+/*2-2*/
+
+.tercer__div-centro2-2 {
+    position: fixed;
+    background-color: rgb(215, 39, 192);
+    inset: 50% auto auto 50%;
+
+}
+
+/*3*/
+.aplicando-stick {
+    position: sticky;
+    top: 0px;
+    background-color: cadetblue;
+
+}
+
+/*pagina*/
+
+body.pagina-dia11 {
+    background-color: #c095f1;
+}
+
+.uso-sticky {
+
+    position: sticky;
+    background-color: black;
+    top: 0;
+    z-index: 100;
+}
+
+.principal-nivle3 h2 {
+
+    text-align: center;
+}
+
+.contenedor_pagina {
+
+    position: relative;
+    width: 100%;
+    height: 1400px;
+    background-color: #063133;
+
+}
+
+.parrafo-div1 {
+
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 250px;
+    background-color: #14c414;
+    color: black;
+    padding: 30px;
+
+}
+
+.parrafo-div2 {
+
+    position: relative;
+    top: 80px;
+    left: 35px;
+    width: 250px;
+    background-color: #2673b8;
+    padding: 30px;
+
+}
+
+.parrafo-div3 {
+
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    width: 250px;
+    background-color: #500a66;
+    color: #dde6df;
+    padding: 30px;
+
+}
+
+.scroll-pagina {
+    text-align: center;
+    margin: 150px 0;
+    padding: 30px;
+    color: white;
+    padding: 20px;
+
+}
+
+
+.propiedad-fixed {
+    position: fixed;
+    background-color: #bfe94d;
+    color: #131213;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    z-index: 200;
 }
