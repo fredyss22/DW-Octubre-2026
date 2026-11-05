@@ -68,3 +68,32 @@ footer {
     margin-top: 30px;
     padding: 15px;
 }
+
+.sec-uno{
+    width: 600px;
+    height: 600px;
+
+}
+
+.intermedio{
+       width: 600px;
+    height: 600px; 
+}
+
+.sec-dos{
+    width: 600px;
+    height: 600px;
+
+}
+
+
+.texto-historia{
+
+    hyphens: auto;
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+.texto-historia p{
+    text-wrap: pretty;
+}
