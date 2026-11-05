@@ -8,6 +8,12 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+
+}
+
 header {
     background-color: black;
     padding: 20px 40px;
@@ -69,31 +75,34 @@ footer {
     padding: 15px;
 }
 
-.sec-uno{
-    width: 600px;
+h2 {
+    text-align: center;
+}
+
+.sec-uno {
+    margin-top: 500px;
+    min-height: 300px;
+    padding: 30px;
+
+}
+
+.intermedio {
     height: 600px;
-
 }
 
-.intermedio{
-       width: 600px;
-    height: 600px; 
+.sec-dos {
+    margin-top: 100px;
+    min-height: 300px;
+    padding: 30px;
 }
 
-.sec-dos{
-    width: 600px;
-    height: 600px;
-
-}
-
-
-.texto-historia{
+.texto-historia {
 
     hyphens: auto;
     overflow-wrap: break-word;
     text-align: justify;
 }
 
-.texto-historia p{
+.texto-historia p {
     text-wrap: pretty;
 }

@@ -1,0 +1,161 @@
+.pagina-extra {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: rgb(27, 52, 53);
+    background: color #f5f5f5;
+    ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.pagina-extra .header-extra {
+
+    background-color: #171717;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.pagina-extra .logo h1 {
+
+    color: white;
+    font-size: 28px;
+
+}
+
+.pagina-extra nav ul {
+
+    display: flex;
+    list-style: none;
+    gap: 15;
+    flex-wrap: wrap;
+
+}
+
+.pagina-extra nav a {
+
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    transition: background-color 0.3;
+
+}
+
+.pagina-extra nav a:hover {
+
+    background-color: rgb(238, 210, 119);
+}
+
+.pagina-extra .principal-extra {
+
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1;
+
+
+}
+
+.portada h2 {
+
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.contenido-noticias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: start;
+
+
+}
+
+.noticia {
+
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+
+}
+
+.categoria span {
+
+    text-align: center;
+}
+
+.noticia img {
+
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+}
+
+
+.texto-noticia {
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+.categoria {
+
+    color: #171717;
+    font-size: 13px;
+
+}
+
+.aviso-cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #222;
+    color: white;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    z-index: 2000;
+    box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.botones-cookies {
+    display: flex;
+    gap: 10px;
+}
+
+.botones-cookies button {
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.aceptar-boton {
+    background-color: #b33a3a;
+    color: white;
+}
+
+.rechazar-boton {
+    background-color: white;
+    color: #222;
+}

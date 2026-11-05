@@ -123,6 +123,13 @@ header {
     z-index: 10;
 }
 
+.espacio-blancon2 {
+
+    height: 1000px;
+    background-color: white;
+
+}
+
 /*3*/
 .contenedor-centro1 {
     width: 100px;
