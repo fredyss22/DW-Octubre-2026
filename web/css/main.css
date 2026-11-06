@@ -283,5 +283,30 @@ body {
 lineas: rgb(24, 23, 23);
 azul body #09132b 
  footer #060a16
-verde fluorecente #00f0ff
+azul fluorecente #00f0ff
 barra búsqueda #111726*/
+
+/*Footer*/
+
+.pie-pagina {
+    width: 100;
+    background-color: #060a16;
+    color: #030303;
+    padding: 45px 30px 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.pie-pagina__contenedo {
+    max-width: 1400;
+    margin: 0 auto;
+}
+
+.pie-pagina__superior {
+
+    display: grid;
+    grid-template-columns: 1.8fr 0.85fr 0.85fr 0.85fr;
+    gap: 55px;
+    padding-bottom: 55px;
+
+}
