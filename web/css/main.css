@@ -7,129 +7,262 @@
 body {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: #070b19;
+    background: #09132b;
     color: white;
 
 }
 
 /*  Header*/
 
-.header {
+.header-inicio {
 
     width: 100%;
-    background-color: blue;
+    background-color: #060a16;
     padding: 18px 5px;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05); */
     position: relative;
-    z-index: 100;
+    /* z-index: 100; */
 
 }
 
-.header-main {
+.header-inicio__superior {
 
     max-width: 1400px;
-    margin: auto;
+    /* margin: auto; */
     display: grid;
-    grid-template-columns: 220px 1fr 100px;
+    /* grid-template-columns: 220px 1fr 100px; */
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     gap: 30px
 }
 
 /*Logo*/
 
-.brand {
-
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-
-}
-
-.logo {
+.header-inicio__logo {
 
     display: flex;
     align-items: center;
     gap: 10px;
+    color: white;
     text-decoration: none;
-    color: blueviolet;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: bold;
+
 
 }
 
-.logo i {
+.header-inicio__logo img {
 
-    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
 
 }
 
 /*navegación*/
 .navegacion {
 
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 25px;
+
+}
+
+.navegacion__lista {
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    gap: 8px;
 
 }
 
 .navegacion-pag {
 
-
-    color: rgb(135, 163, 222);
-    font-size: 13px;
+    color: #C7D5E0;
     text-decoration: none;
-    font-weight: 500;
-    white-space: nowrap;
-    transition: 0.3s;
+    padding: 10px;
+    display: block;
+    padding: 10px 14px;
+    border-radius: 2px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navegacion-pag:hover {
+
+    color: #030303;
+    background-color: #00f0ff;
+}
+
+.navegacion-pag.activo {
+    color: #030303;
+    background-color: #00f0ff;
 
 }
 
-.navegacion-pag:activo {
+/*perfil*/
+.usuario {
 
-    color: brown;
+    position: relative;
+    justify-self: end;
+}
+
+.usuario__boton {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.usuario__boton img {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
 
 }
 
+.usuario__flecha {
+    font-size: 11px;
+
+}
+
+/*menú desplegable*/
+.usuario__menu {
+
+    /* display: none; */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 160px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+
+}
+
+.usuario__menu a {
+
+    display: block;
+    padding: 12px 15px;
+    color: #eaee05;
+    text-decoration: none;
+
+}
+
+.usuario__menu a:hover {
+
+    background-color: #4eda28;
+
+}
+
+/*menu efecto*/
+.usuario:hover {
+
+    display: block;
+
+}
+
+.usuario__menu {
+    display: block;
+
+}
+
+.usuario:focus-within {
+    display: block;
+
+}
+
+.usuario__menu {
+    display: block;
+
+}
+
+/*footer abajo */
+
+.header-inicio__inferior {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+
+}
 
 /*Buscador*/
 
-.buscador__formulario {
-
-    width: 100%;
+.buscador {
     display: flex;
-    align-items: center;
-    background-color: aqua;
-    border-radius: 8px;
-    border: solid 1px #4eda28;
-
+    width: 280px;
+    height: 38px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-.buscador__formulario input {
+.buscador input {
 
-    width: 100%;
-    padding: 12px;
+    flex: 1;
+    min-width: 0;
+    padding: 0 12px;
     border: none;
     outline: none;
-    background-color: transparent;
-    font-size: 12px;
-
+    font-size: 14px;
 
 }
 
-.buscador__formulario button {
+.buscador button {
 
+    width: 45px;
     border: none;
-    background-color: transparent;
-    padding: 12px;
+    background-color: #4eda28;
     color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.buscador button:hover {
+
+    background-color: aqua;
+
+}
+
+/*carrito*/
+
+.carrito {
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.carrito__boton {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 15px;
+    background-color: #eaee05;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
     cursor: pointer;
 
+
 }
 
-.buscador__formulario button:hover {
-
-    color: rgb(0, 0, 0);
-
+.carrito__:hover {
+    background-color: brown;
 }
