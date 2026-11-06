@@ -11,44 +11,44 @@
 
 <body>
     <header class="header-inicio">
-        <!-- menú superior izquierda -->
-        <div class="header-inicio__superior">
-            <!-- <div class="header-inicio__logo"> -->
-            <a href="index.html" class="header-inicio__logo"><img
-                    src="https://storyblok-cdn.photoroom.com/f/191576/284x160/b5a2c47b2e/selency_16_9.webp/m/128x0/filters:quality(80):no_upscale():format(webp)"
-                    alt="Logo de la página">
-            </a>
+        <div class="contenedor-principal">
+            <!-- menú superior izquierda -->
+            <div class="header-inicio__superior">
+                <!-- <div class="header-inicio__logo"> -->
+                <div class="header-inicio__izquierda">
+                    <a href="index.html" class="header-inicio__logo"><img
+                            src="https://storyblok-cdn.photoroom.com/f/191576/284x160/b5a2c47b2e/selency_16_9.webp/m/128x0/filters:quality(80):no_upscale():format(webp)"
+                            alt="Logo de la página">
+                    </a>
 
-            <nav class="navegacion">
-                <ul class="navegacion__lista">
-                    <li><a href="#" class="navegacion-pag activo" title="Página inicio"
-                            aria-label="Ir a página de inicio">TIENDA</a></li>
-                    <li><a href="#" class="navegacion-pag" title="Página categorías"
-                            aria-label="Ir a página de categorías">CATEGORÍAS</a></li>
-                    <li><a href="#" class="navegacion-pag" title="Página recomendaciones"
-                            aria-label="Ir a la página de recomendaciones">RECOMENDACIONES</a></li>
-                    <li><a href="#" class="navegacion-pag" title="Página ofertas"
-                            aria-label="Ir a la página de ofertas">OFERTAS</a></li>
-                    <li><a href="#" class="navegacion-pag" title="Registro"
-                            aria-label="Ir a página de registro">REGISTRO</a></li>
-                </ul>
-            </nav>
+                    <nav class="navegacion">
+                        <ul class="navegacion__lista">
+                            <li><a href="#" class="navegacion-pag activo" title="Página inicio"
+                                    aria-label="Ir a página de inicio">TIENDA</a></li>
+                            <li><a href="#" class="navegacion-pag" title="Página categorías"
+                                    aria-label="Ir a página de categorías">CATEGORÍAS</a></li>
+                            <li><a href="#" class="navegacion-pag" title="Página recomendaciones"
+                                    aria-label="Ir a la página de recomendaciones">RECOMENDACIONES</a></li>
+                            <li><a href="#" class="navegacion-pag" title="Página ofertas"
+                                    aria-label="Ir a la página de ofertas">OFERTAS</a></li>
+                            <li><a href="#" class="navegacion-pag" title="Registro"
+                                    aria-label="Ir a página de registro">REGISTRO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="usuario">
+                    <!-- <div class="usuario__perfil"> -->
+                    <button class="usuario__boton"><img src="images/perfil.jfif" alt="foto de perfíl">
+                        <span class="usuario__flecha">▽</span>
+                    </button>
 
-            <div class="usuario">
-                <!-- <div class="usuario__perfil"> -->
-                <button class="usuario__boton"><img
-                        src="https://storyblok-cdn.photoroom.com/f/191576/284x160/b5a2c47b2e/selency_16_9.webp/m/128x0/filters:quality(80):no_upscale():format(webp)"
-                        alt="foto de perfíl">
-                    <p class="usuario__flecha">click</p>
-                </button>
+                    <div class="usuario__menu">
+                        <a href="#" title="perfil" aria-label="Ir a perfil de usuario">Perfíl</a>
+                        <a href="#" title="Cerrar sesión" aria-label="Cerrar perfíl de usuario">Cerrar sesión</a>
 
-                <div class="usuario__menu">
-                    <a href="#" title="perfil" aria-label="Ir a perfil de usuario">Perfíl</a>
-                    <a href="#" title="Cerrar sesión" aria-label="Cerrar perfíl de usuario">Cerrar sesión</a>
-
+                    </div>
                 </div>
             </div>
-
             <!-- buscador -->
             <div class="header-inicio__inferior">
                 <!-- 
@@ -56,24 +56,24 @@
 
                 <form class="buscador">
                     <input type="search" class="buscador__campo">
-                    <button type="submit">Buscar</button>
+                    <button type="submit">⌕</button>
 
                 </form>
 
                 <!-- carrito -->
-                <inside class="carrito">
-                    <button class="carrito__boton">Carrito</button>
+                <div class="carrito">
+                    <button class="carrito__boton">Agregar al carrito 🛒</button>
 
-                </inside>
-
+                </div>
             </div>
+        </div>
 
     </header>
 
     <main>
 
-    </main>
-    <footer class="footer-pagina">
+    </main class="contenedor-principal">
+    <footer class="contenedor-principal footer-pagina__contenedor">
         <div class="footer-pagina__contenedor">
 
             <!-- footer primera columna -->
