@@ -28,10 +28,8 @@ body {
     width: 100%;
     background-color: #060a16;
     padding: 18px 5px;
-    /* box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05); */
-    /* position: relative; */
-    /* z-index: 100; */
-
+    border: 1px solid rgb(24, 23, 23);
+    ;
 }
 
 .header-inicio__superior {
@@ -46,7 +44,7 @@ body {
 
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 /*Logo*/
@@ -69,9 +67,10 @@ body {
 
 .header-inicio__logo img {
 
-    width: 55px;
-    height: 55px;
+    width: 220px;
+    height: auto;
     object-fit: contain;
+    margin-right: 30px;
 }
 
 /*navegación*/
@@ -79,6 +78,7 @@ body {
 
     display: flex;
     align-items: center;
+
 
 }
 
@@ -129,6 +129,7 @@ body {
     color: white;
     font-size: 15px;
     cursor: pointer;
+    border: none;
 }
 
 .usuario__boton img {
@@ -138,7 +139,6 @@ body {
     border-radius: 50%;
     object-fit: cover;
     font-weight: bold;
-
 
 }
 
@@ -211,10 +211,11 @@ body {
 
 .buscador {
     display: flex;
-    width: 280px;
+    width: 500px;
     height: 38px;
     background-color: rgb(61, 21, 21);
-    border-radius: 5px;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
     overflow: hidden;
 }
 
@@ -272,11 +273,15 @@ body {
 }
 
 .carrito__boton:hover {
-    background-color: #00f0ff;
-    color: black
+    background-color: #3a7404;
+    color: white;
+    border: 1px solid rgb(24, 23, 23);
+
 }
 
 /* colores 
-azul footer #09132b 
+lineas: rgb(24, 23, 23);
+azul body #09132b 
+ footer #060a16
 verde fluorecente #00f0ff
 barra búsqueda #111726*/
