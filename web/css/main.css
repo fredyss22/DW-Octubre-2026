@@ -4,14 +4,19 @@
     box-sizing: border-box;
 }
 
-body,
 html {
+    min-height: 100%;
+}
+
+body {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #09132b;
     color: white;
     display: flex;
     flex-direction: column;
+    min-height: 100hv;
+    width: 100%;
 
 }
 
@@ -301,11 +306,13 @@ barra búsqueda #111726*/
     color: white;
     padding: 45px 30px 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-shrink: 0;
 
 }
 
 .pie-pagina__contenedor {
     max-width: 1400;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -335,9 +342,17 @@ barra búsqueda #111726*/
 }
 
 .redes-sociales img {
-
-    fill: beige;
-
+    display: block;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    padding: 5px;
+    background-color: #111726;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
+    filter: black(5) brightness(0) invert(1);
+    transition: filter 0.3s ease, transform 0.3 ease;
+    margin-top: 12px;
 }
 
 .pie-pagina__logotipo {
@@ -469,6 +484,16 @@ barra búsqueda #111726*/
     background-color: rgb(24, 23, 23);
 }
 
+.pie-pagina__inferior {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 35px;
+    color: rgb(24, 23, 23);
+
+}
+
 .pie-pagina__derechos {
 
     color: #060a16;
@@ -476,16 +501,6 @@ barra búsqueda #111726*/
     line-height: 1.7;
 }
 
-.pie-pagina__inferior {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding-top: 35px;
-    color: rgb(24, 23, 23);
-
-}
 
 .pie-pagina__derechos {
 
