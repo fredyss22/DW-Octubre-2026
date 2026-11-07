@@ -318,20 +318,26 @@ barra búsqueda #111726*/
 
 }
 
-.pie-pagina__marca {
+.pie-pagina__img {
 
     max-width: 470px;
 
 }
 
-.pie-pagina__ img {
+.pie-pagina__marca img {
     display: block;
-    width: 150px;
+    width: 200px;
     max-width: 100%;
     height: auto;
     max-height: 50px;
     object-position: left center;
     margin-bottom: 18px;
+}
+
+.redes-sociales img {
+
+    fill: beige;
+
 }
 
 .pie-pagina__logotipo {
@@ -458,7 +464,7 @@ barra búsqueda #111726*/
 
 .pie-pagina__linea {
 
-    width: 100px;
+    width: 100%;
     height: 1px;
     background-color: rgb(24, 23, 23);
 }
@@ -478,5 +484,12 @@ barra búsqueda #111726*/
     gap: 20px;
     padding-top: 35px;
     color: rgb(24, 23, 23);
+
+}
+
+.pie-pagina__derechos {
+
+    color: white;
+    text-align: center;
 
 }
