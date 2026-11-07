@@ -4,12 +4,19 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+html {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #09132b;
     color: white;
+    display: flex;
+    flex-direction: column;
 
+}
+
+main {
+    flex: 1;
 }
 
 .contenedor-principal {
@@ -289,7 +296,7 @@ barra búsqueda #111726*/
 /*Footer*/
 
 .pie-pagina {
-    width: 100;
+    width: 100%;
     background-color: #060a16;
     color: white;
     padding: 45px 30px 25px;
@@ -313,9 +320,18 @@ barra búsqueda #111726*/
 
 .pie-pagina__marca {
 
-
     max-width: 470px;
 
+}
+
+.pie-pagina__ img {
+    display: block;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    max-height: 50px;
+    object-position: left center;
+    margin-bottom: 18px;
 }
 
 .pie-pagina__logotipo {
@@ -339,6 +355,7 @@ barra búsqueda #111726*/
     color: white;
     border-radius: 10px;
     font-size: 20;
+    flex-shrink: 0;
 
 }
 
@@ -347,8 +364,13 @@ barra búsqueda #111726*/
     color: #00f0ff;
     font-size: 20px;
     font-weight: 700;
-    letter-spacing: -0.9px;
+    white-space: nowrap;
+}
 
+.pie-pagina__descripcion {
+    max-width: 400px;
+    font-size: 13px;
+    line-height: 1.7;
 }
 
 .redes-sociales {
