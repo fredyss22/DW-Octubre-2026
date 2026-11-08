@@ -286,8 +286,9 @@ main {
 }
 
 .carrito__boton:hover {
-    background-color: #3a7404;
-    color: white;
+
+    background-color: #145c38;
+    color: #5cff9a;
     border: 1px solid rgb(24, 23, 23);
 
 }
