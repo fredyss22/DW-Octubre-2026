@@ -8,6 +8,10 @@
 
 }
 
+body {
+    background-color: rgb(241, 237, 237);
+}
+
 header {
     background-color: black;
     padding: 20px 40px;
@@ -110,7 +114,14 @@ audio {
 }
 
 .video {
-    width: 100%;
-    padding: 20px;
+    width: 900px;
+    max-width: 90%;
     border-radius: 10px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.video video {
+    width: 100%;
+    display: block;
 }

@@ -1,0 +1,64 @@
+/* ESTILO NATURE WORLD */
+
+body {
+    background: #101a16;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.contenedor-videos {
+    background: linear-gradient(145deg, #263d32, #0b110e);
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid #5a9b68;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 0 25px #284d35;
+}
+
+.etiqueta {
+    color: #9bd6a5;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.contenedor-videos h1 {
+    color: #b7e4c0;
+    font-size: 34px;
+    letter-spacing: 3px;
+}
+
+.descripcion {
+    color: #c5d6c9;
+    margin-bottom: 35px;
+}
+
+.video {
+    background: #17251d;
+    padding: 18px;
+    margin: 25px 0;
+    border: 1px solid #5a9b68;
+    border-radius: 12px;
+}
+
+.video h2 {
+    color: #a5d6a7;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.video video {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.pie {
+    color: #9bd6a5;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
