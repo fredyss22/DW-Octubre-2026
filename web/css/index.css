@@ -1,0 +1,277 @@
+.contenedor_inicio {
+
+    background-color: #060a16;
+    border: 1px solid rgb(24, 23, 23);
+    padding: 20px;
+    margin-top: 30px;
+
+}
+
+.titulo-inicio {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.exhibicion-juego__contenido {
+    display: grid;
+    grid-template-columns: 13fr 7fr;
+    gap: 20px;
+    width: 100%;
+    margin-top: 100px;
+    padding: auto;
+}
+
+.exhibicion-juego__principal {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    border-radius: 8px;
+
+}
+
+.exhibicion-juego__principal img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 2px;
+}
+
+.exhibicion-juego__galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.exhibicion-juego__titulo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.exhibicion-juego__miniaturas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.exhibicion-juego__miniaturas img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.exhibicion-juego__miniaturas img:hover {
+    transform: scale(1.04);
+}
+
+.exhibicion-juego__compra {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    align-items: center;
+}
+
+.exhibicion-juego__precio {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.exhibicion-juego__descuento {
+    background-color: #1bc40c;
+    color: white;
+    padding: 8px 14px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.exhibicion-juego__boton {
+    grid-column: 1 / -1;
+    padding: 14px;
+    background-color: #072332;
+    color: #00f0ff;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.exhibicion-juego__boton:hover {
+    background-color: #00f0ff;
+    color: black;
+
+}
+
+.exhibicion-juego__controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+/* FLECHAS */
+.control-juego {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.control-juego:hover {
+    color: #00f0ff;
+}
+
+.exhibicion-juego__indicadores {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.indicador {
+    width: 11px;
+    height: 11px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(24, 23, 23);
+    cursor: pointer;
+}
+
+.indicador:hover {
+    background-color: #072332;
+}
+
+.indicador--activo {
+    background-color: #00f0ff;
+    transform: scale(1.25);
+}
+
+/*fila de imagenes*/
+
+.juegos-destacados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.tarjeta-juego {
+    display: flex;
+    flex-direction: column;
+    background-color: #060a16;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
+    min-width: 0;
+}
+
+.tarjeta-juego:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-juego img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    /*-----------------------------*/
+    display: block;
+}
+
+.tarjeta-juego__informacion {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px;
+    gap: 10px;
+}
+
+.tarjeta-juego__informacion h3 {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px;
+    width: 45%;
+    height: 25px;
+    line-height: 1.6;
+    border-radius: 3px;
+
+}
+
+.tarjeta-juego__accion {
+    background-color: rgba(255, 0, 0, 0.349);
+    color: white;
+}
+
+.tarjeta-juego__aventura {
+    background-color: rgba(128, 0, 128, 0.445);
+    color: white;
+
+}
+
+.tarjeta-juego__deportes {
+    background-color: rgba(0, 128, 0, 0.534);
+    color: white;
+
+}
+
+.tarjeta-juego__estrategia {
+    background-color: rgba(0, 0, 255, 0.473);
+    color: white;
+
+}
+
+.tarjeta-juego__titulo {
+    color: white;
+    font-size: 18px;
+}
+
+.tarjeta-juego__descripcion {
+    color: #C7D5E0;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.tarjeta-juego__precio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.tarjeta-juego__descuento {
+    background-color: #1bc40c;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 10px;
+}
+
+.tarjeta-juego__valor {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.tarjeta-juego__boton {
+    width: 100%;
+    padding: 12px;
+    background-color: #072332;
+    color: #00f0ff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tarjeta-juego__boton:hover {
+    background-color: #00f0ff;
+    color: black;
+}

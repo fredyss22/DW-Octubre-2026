@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+
 
     <title>Nexusstore</title>
 </head>
@@ -73,130 +75,305 @@
     </header>
 
     <!-- inicio main -->
+
     <main>
 
-    </main>
+        <main class="contenedor-principal">
+            <div class="contenedor_inicio">
 
+                <h1 class="titulo-inicio">
+                    DESTACADOS Y RECOMENDADOS
+                </h1>
 
-    <footer class="pie-pagina">
-        <div class="pie-pagina__contenedor">
-            <!-- footer primera columna -->
-            <div class="pie-pagina__superior">
-                <div class="pie-pagina__marca"> <img src="images/logo_blanco.png" alt="Logo de la página">
-                    <p class="pie-pagina__descripcion">
-                        Tu plataforma de distribución digital de videojuegos de última generación, DLCs y
-                        coleccionables.
-                        Descargas seguras, precios inmejorables y activación garantizada al instante.
+                <div class="exhibicion-juego__contenido">
 
-                    </p>
-                    <nav class="redes-sociales">
-                        <a href="" title="instagram" aria-label="Ir al instagram de  nexusstore"><img
-                                src="images/instagram.svg"></a>
-                        <a href="" title="tik-tok" aria-label="Ir al tik tok de  nexusstore"><img
-                                src="images/tok.svg"></a>
-                        <a href="" title="Youtube" aria-label="Ir al youtube de  nexusstore"><img
-                                src="images/youtube.svg"></a>
-                        <a href="" title="Telegram" aria-label="Ir al Telegram de  nexusstore"><img
-                                src="images/telegram.svg"></a>
+                    <!-- Imagen grande izquierda -->
+                    <div class="exhibicion-juego__principal">
+                        <img src="images/juegos/blackd.jpg" alt="Imagen principal del juego">
+                    </div>
 
-                    </nav>
+                    <!-- Columna derecha -->
+                    <div class="exhibicion-juego__galeria">
+
+                        <h2 class="exhibicion-juego__titulo">
+                            Nombre del juego
+                        </h2>
+
+                        <div class="exhibicion-juego__miniaturas">
+                            <img src="images/juegos/blackd.jpg" alt="Captura 1">
+                            <img src="images/juegos/blackd.jpg" alt="Captura 2">
+                            <img src="images/juegos/blackd.jpg" alt="Captura 3">
+                            <img src="images/juegos/blackd.jpg" alt="Captura 4">
+                        </div>
+
+                        <div class="exhibicion-juego__compra">
+
+                            <div class="exhibicion-juego__descuento">
+                                <span>-20%</span>
+                            </div>
+
+                            <div class="exhibicion-juego__precio">
+                                <span class="precio">$59.99</span>
+                            </div>
+
+                            <button class="exhibicion-juego__boton">
+                                COMPRAR
+                            </button>
+
+                        </div>
+
+                    </div>
 
                 </div>
-                <!-- footer segunda columna -->
-                <nav class="pie-pagina__columna">
-                    <h2 class="pie-pagina__titulo">EXPRORAR</h2>
-                    <ul class="pie-pagina__lista">
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Lanzamientos 2027</a>
-                        </li>
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Top ventas globales</a>
-                        </li>
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Ofertas de temporada</a>
-                        </li>
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Tarjetas de ragalo</a>
-                        </li>
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Juegos gratuitos</a>
-                        </li>
+                <!-- Controles para cambiar de juego -->
+                <div class="exhibicion-juego__controles">
 
-                    </ul>
+                    <button class="control-juego control-juego--anterior">
+                        &#10094;
+                    </button>
 
-                </nav>
-                <nav class="pie-pagina__columna">
-                    <h2 class="pie-pagina__titulo">AYUDA Y SOPORTE</h2>
-                    <ul class="pie-pagina__lista">
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Centro de ayuda 24/7</a>
-                        </li>
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Política de reembolsos</a>
-                        </li>
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Estado de servicios</a>
-                        </li>
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Activación de claves</a>
-                        </li>
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Contacto</a>
-                        </li>
+                    <div class="exhibicion-juego__indicadores">
+                        <button class="indicador indicador--activo" aria-label="Juego 1"></button>
+                        <button class="indicador" aria-label="Juego 2"></button>
+                        <button class="indicador" aria-label="Juego 3"></button>
+                        <button class="indicador" aria-label="Juego 4"></button>
+                    </div>
 
-                    </ul>
+                    <button class="control-juego control-juego--siguiente">
+                        &#10095;
+                    </button>
 
-                </nav>
-                <nav class="pie-pagina__columna">
-                    <h2 class="pie-pagina__titulo">LEGAL Y TERMINOS</h2>
-                    <ul class="pie-pagina__lista">
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Términos del servicio</a>
-                        </li>
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Política de privacidad</a>
-                        </li>
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Acuerdo de suscripción</a>
-                        </li>
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Preferencias de cookies</a>
-                        </li>
-                        <li class="pie-pagina__elemento">
-                            <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
-                                aria-label="Ir a pagina lanzamientos">Cumplimiento</a>
-                        </li>
+                </div>
 
-                    </ul>
+                <section class="juegos-destacados">
 
-                </nav>
+                    <div class="tarjeta-juego">
+
+                        <img src="img/juegos/juego-1.jpg" alt="Juego1">
+
+                        <div class="tarjeta-juego__informacion">
+
+                            <h3 class="tarjeta-juego__accion">ACCIÓN</h3>
+                            <h2 class="tarjeta-juego__titulo">Nombre del juego</h2>
+
+                            <p class="tarjeta-juego__descripcion">
+                                Una pequeña descripción del juego para llamar
+                                la atención del comprador.
+                            </p>
+
+                            <div class="tarjeta-juego__precio">
+                                <span class="tarjeta-juego__descuento">-30%</span>
+                                <span class="tarjeta-juego__valor">39,99 €</span>
+                            </div>
+
+                            <button class="tarjeta-juego__boton">
+                                AÑADIR AL CARRITO
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tarjeta-juego">
+
+                        <img src="img/juegos/juego-2.jpg" alt="Juego2">
+
+                        <div class="tarjeta-juego__informacion">
+                            <h3 class="tarjeta-juego__aventura">AVENTURA</h3>
+                            <h2 class="tarjeta-juego__titulo">Nombre del juego</h2>
+
+                            <p class="tarjeta-juego__descripcion">
+                                Una pequeña descripción del juego para llamar
+                                la atención del comprador.
+                            </p>
+
+                            <div class="tarjeta-juego__precio">
+                                <span class="tarjeta-juego__descuento">-20%</span>
+                                <span class="tarjeta-juego__valor">49,99 €</span>
+                            </div>
+
+                            <button class="tarjeta-juego__boton">
+                                AÑADIR AL CARRITO
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- fila de juegos -->
+                    <div class="tarjeta-juego">
+
+                        <img src="img/juegos/juego-3.jpg" alt="Juego3">
+
+                        <div class="tarjeta-juego__informacion">
+                            <h3 class="tarjeta-juego__deportes">DEPORTES</h3>
+                            <h2 class="tarjeta-juego__titulo">Nombre del juego</h2>
+
+                            <p class="tarjeta-juego__descripcion">
+                                Una pequeña descripción del juego para llamar
+                                la atención del comprador.
+                            </p>
+
+                            <div class="tarjeta-juego__precio">
+                                <span class="tarjeta-juego__descuento">-40%</span>
+                                <span class="tarjeta-juego__valor">29,99 €</span>
+                            </div>
+
+                            <button class="tarjeta-juego__boton">
+                                AÑADIR AL CARRITO
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="tarjeta-juego">
+
+                        <img src="img/juegos/juego-4.jpg" alt="Juego4">
+
+                        <div class="tarjeta-juego__informacion">
+                            <h3 class="tarjeta-juego__estrategia">ESTRATEGIA</h3>
+                            <h2 class="tarjeta-juego__titulo">Nombre del juego</h2>
+
+                            <p class="tarjeta-juego__descripcion">
+                                Una pequeña descripción del juego para llamar
+                                la atención del comprador.
+                            </p>
+
+                            <div class="tarjeta-juego__precio">
+                                <span class="tarjeta-juego__descuento">-15%</span>
+                                <span class="tarjeta-juego__valor">34,99 €</span>
+                            </div>
+
+                            <button class="tarjeta-juego__boton">
+                                AÑADIR AL CARRITO
+                            </button>
+                        </div>
+
+                    </div>
+
+                </section>
+
+        </main>
+
+
+        <footer class="pie-pagina">
+            <div class="pie-pagina__contenedor">
+                <!-- footer primera columna -->
+                <div class="pie-pagina__superior">
+                    <div class="pie-pagina__marca"> <img src="images/logo_blanco.png" alt="Logo de la página">
+                        <p class="pie-pagina__descripcion">
+                            Tu plataforma de distribución digital de videojuegos de última generación, DLCs y
+                            coleccionables.
+                            Descargas seguras, precios inmejorables y activación garantizada al instante.
+
+                        </p>
+                        <nav class="redes-sociales">
+                            <a href="" title="instagram" aria-label="Ir al instagram de  nexusstore"><img
+                                    src="images/instagram.svg"></a>
+                            <a href="" title="tik-tok" aria-label="Ir al tik tok de  nexusstore"><img
+                                    src="images/tok.svg"></a>
+                            <a href="" title="Youtube" aria-label="Ir al youtube de  nexusstore"><img
+                                    src="images/youtube.svg"></a>
+                            <a href="" title="Telegram" aria-label="Ir al Telegram de  nexusstore"><img
+                                    src="images/telegram.svg"></a>
+
+                        </nav>
+
+                    </div>
+                    <!-- footer segunda columna -->
+                    <nav class="pie-pagina__columna">
+                        <h2 class="pie-pagina__titulo">EXPRORAR</h2>
+                        <ul class="pie-pagina__lista">
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Lanzamientos 2027</a>
+                            </li>
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Top ventas globales</a>
+                            </li>
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Ofertas de temporada</a>
+                            </li>
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Tarjetas de ragalo</a>
+                            </li>
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Juegos gratuitos</a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+                    <nav class="pie-pagina__columna">
+                        <h2 class="pie-pagina__titulo">AYUDA Y SOPORTE</h2>
+                        <ul class="pie-pagina__lista">
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Centro de ayuda 24/7</a>
+                            </li>
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Política de reembolsos</a>
+                            </li>
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Estado de servicios</a>
+                            </li>
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Activación de claves</a>
+                            </li>
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Contacto</a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+                    <nav class="pie-pagina__columna">
+                        <h2 class="pie-pagina__titulo">LEGAL Y TERMINOS</h2>
+                        <ul class="pie-pagina__lista">
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Términos del servicio</a>
+                            </li>
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Política de privacidad</a>
+                            </li>
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Acuerdo de suscripción</a>
+                            </li>
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Preferencias de cookies</a>
+                            </li>
+                            <li class="pie-pagina__elemento">
+                                <a href="#lanamientos" class="pie-pagina__enlace" title="lanzamientos"
+                                    aria-label="Ir a pagina lanzamientos">Cumplimiento</a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+                </div>
+                <div class="pie-pagina__linea"></div>
+
+                <div class="pie-pagina__inferior">
+                    <p class="pie-pagina__derechos">
+                        🕹️ 2026 NexusPlay Entertainment S.L.
+                        Todos los derechos reservados.
+                        Marcas registradas pertenecen a sus respectivos
+                        editores y desarrolladores.
+                    </p>
+                </div>
             </div>
-            <div class="pie-pagina__linea"></div>
-
-            <div class="pie-pagina__inferior">
-                <p class="pie-pagina__derechos">
-                    🕹️ 2026 NexusPlay Entertainment S.L.
-                    Todos los derechos reservados.
-                    Marcas registradas pertenecen a sus respectivos
-                    editores y desarrolladores.
-                </p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 
 </html>
