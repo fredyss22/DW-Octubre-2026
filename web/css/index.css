@@ -2,7 +2,7 @@
 .contenedor__inicio {
     background-color: #060a16;
     border: 1px solid rgb(24, 23, 23);
-    padding: 20%;
+    padding: 20px;
     margin-top: 30px;
 }
 
@@ -25,13 +25,6 @@
 
 }
 
-/*imegen derecha*/
-
-.exhibicion-juego__galeria {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
 
 /*columna izquierda*/
 
@@ -49,6 +42,15 @@
     border-radius: 2px;
 
 }
+
+/*imegen derecha*/
+
+.exhibicion-juego__galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
 
 /*Título del juego*/
 .exhibicion-juego__titulo {
@@ -252,7 +254,7 @@
     cursor: pointer;
 }
 
-.tarjeta-juego:hover {
+.tarjeta-juego__boton:hover {
     background-color: #00f0ff;
     color: black;
 }
