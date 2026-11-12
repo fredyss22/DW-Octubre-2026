@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/categoria.css">
+
 
     <title>Nexusstore</title>
 </head>
@@ -23,10 +25,10 @@
                         <ul class="navegacion__lista">
                             <li><a href="index.html" class="navegacion-pag" title="Página inicio"
                                     aria-label="Ir a página de inicio">TIENDA</a></li>
-                            <li><a href="categorias.html" class="navegacion-pag " title="Página categorías"
-                                    aria-label="Ir a página de categorías">CATEGORÍAS</a></li>
-                            <li><a href="recomendaciones.html" class="navegacion-pag" title="Página recomendaciones"
-                                    aria-label="Ir a la página de recomendaciones">RECOMENDACIONES</a></li>
+                            <li><a href="categorias.html" class="navegacion-pag activo" title="Página categorías"
+                                    aria-label="Ir a página de categorías ">CATEGORÍAS</a></li>
+                            <li><a href="detalle.html" class="navegacion-pag " title="Página recomendaciones"
+                                    aria-label="Ir a la página de recomendaciones">RESEÑA</a></li>
                             <li><a href="ofertas.html" class="navegacion-pag" title="Página ofertas"
                                     aria-label="Ir a la página de ofertas">OFERTAS</a></li>
                             <li><a href="registro.html" class="navegacion-pag" title="Registro"
@@ -73,7 +75,7 @@
     </header>
 
     <!-- inicio main -->
-    <main>
+    <main class="pagina-categoria">
         <div class="contenedor-busqueda">
             <div class="herramientas-tienda">
                 <div>
@@ -85,7 +87,7 @@
                 <!-- Estructura ordenar -->
                 <div class="ordenar-tienda">
                     <label for="orden-juegos">ORDENAR POR</label>
-                    <select id="orden-juegos" class="ordenar-tienda__select">
+                    <select id="orden-juegos" class="ordenar-tienda__seleccion">
                         <option value="relevante">Más relevante</option>
                         <option value="menor-precio">Menor precio</option>
                         <option value="mayor-precio">Mayor precio</option>
@@ -107,7 +109,7 @@
 
         </div>
 
-        <!-- contenido catálogo -->
+        <!-- contenido categoría -->
         <div class="contenedor-pricipal">
             <div class="catalogo">
 

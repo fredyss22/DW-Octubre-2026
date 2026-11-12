@@ -1,0 +1,195 @@
+/*Contenido general*/
+
+.pagina-categoria {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.pagina-categoria .contenedor-busqueda {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.pagina-categoria .herramientas-tienda {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    padding: 15px;
+    margin: 30px;
+    background-color: #060a16;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
+
+}
+
+
+/*Estructura ordenar*/
+
+.pagina-categoria .ordenar-tienda {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.pagina-categoria .ordenar-tienda__seleccion {
+    padding: 10px;
+    background-color: #111726;
+    color: white;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.pagina-categoria .ordenar-tienda__seleccion option {
+
+    background-color: #111726;
+
+}
+
+.pagina-categoria .herramientas-tienda value {
+
+    background-color: #00f0ff;
+}
+
+/*visualización*/
+
+.pagina-categoria .visualizacion-tienda {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.pagina-categoria .visualizacion-tienda__boton {
+    width: 40px;
+    height: 40px;
+    background-color: #111726;
+    color: white;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+
+.pagina-categoria .visualizacion-tienda__boton:hover {
+    background-color: #00f0ff;
+    color: white;
+}
+
+.pagina-categoria .visualizacion-activa {
+    background-color: #111726;
+    color: white;
+    border: 1px solid rgb(24, 23, 23);
+}
+
+/*contenido categoría*/
+
+.pagina-categoria .catalogo {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 5px auto;
+    padding: 10px;
+
+}
+
+/*filtro*/
+
+.pagina-categoria .filtros {
+
+    padding: 20px;
+    background-color: #060a16;
+    border-radius: 2;
+    height: auto;
+
+}
+
+.pagina-categoria .filtros h2 {
+    margin-top: 0;
+}
+
+.pagina-categoria .filtros h3 {
+    margin-top: 25px;
+    color: #00f0ff;
+}
+
+.pagina-categoria .filtros label {
+    display: block;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+/* columna juegos*/
+
+.pagina-categoria .catalogo-juegos {
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+
+}
+
+.pagina-categoria .juegos {
+    background-color: #060a16;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagina-categoria .juegos img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 2px;
+
+}
+
+.pagina-categoria .juegos h3 {
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+/* botones */
+
+.pagina-categoria .juego-info {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+
+}
+
+.pagina-categoria .juego-info span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.pagina-categoria .juego-info button {
+
+    background-color: #072332;
+    color: #00f0ff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+
+.pagina-categoria .juego-info button:hover {
+    background-color: #00f0ff;
+    color: black;
+}
