@@ -1,0 +1,181 @@
+/*contenedor pricipal*/
+
+.contenedor-detalle {
+    width: 70%;
+    margin: 10px auto;
+    box-sizing: border-box;
+    display: grid;
+    gap: 25px;
+    max-width: 1400px;
+    grid-template-columns: minmax(0, 70fr) minmax(0, 30fr);
+
+}
+
+.resena {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    background-color: #060a16;
+    border: 1px solid rgb(24, 23, 23);
+    padding: 10px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+/* video principal */
+.resena__video-principal {
+    width: 100%;
+    background-color: #060a16;
+    border: 1px solid rgb(24, 23, 23);
+    padding: 10px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.resena__video-principal video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+}
+
+/*videos mini*/
+
+.resena__videos-lista {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px
+}
+
+.resena__video-mini video {
+
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 2px;
+
+}
+
+/*información*/
+.resena__informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resena__imagen {
+    text-align: center;
+    width: 100%;
+}
+
+.resena__imagen img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+/*Descripción valoracion*/
+
+.resena__descripcion,
+.resena__ficha,
+.resena__valoracion {
+    padding: 10px;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
+    background-color: #060a16;
+
+}
+
+/*títulos*/
+.resena__titulo,
+.resena__subtitulo {
+    margin-top: 0;
+}
+
+/*datos ficha*/
+.resena__dato {
+    margin: 10px 0;
+
+}
+
+/* estrellas */
+.resena__estrellas {
+    color: #00f0ff;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.resena__nota {
+    font-weight: bold;
+
+}
+
+/*juegos*/
+
+.juego__resena {
+
+    display: grid;
+    width: 70%;
+    grid-template-columns: minmax(0, 70fr) minmax(0, 30fr);
+    gap: 25px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+/*columna de descripción*/
+.juego__resena-descripcion {
+    padding: 15px;
+    color: #00f0ff;
+    background-color: #060a16;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
+}
+
+.juego__resena-titulo {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.juego__resena-texto {
+    background-color: #060a16;
+    font-size: 16px;
+    line-height: 1.7;
+    color: white;
+    text-align: justify;
+}
+
+/* columna requisitos */
+.juego__resena-requisitos {
+    padding: 25px;
+    background-color: #060a16;
+    border-radius: 2px;
+    color: #00f0ff;
+    box-sizing: border-box;
+}
+
+.juego__resena-requisito {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgb(24, 23, 23);
+    color: white;
+}
+
+.juego__resena-requisito:last-child {
+    border-bottom: none;
+}
+
+.juego__resena-etiqueta {
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+
+.juego__resena-valor {
+    font-size: 14px;
+    color: white;
+}
