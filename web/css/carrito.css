@@ -1,0 +1,257 @@
+/* congtenedor inicial */
+.carrito {
+    background: #09132b;
+    color: white;
+    width: 70%;
+    max-width: 1400px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.carrito__titulo {
+    font-size: 28px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.carrito__contenido {
+    display: flex;
+    grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 5px;
+    align-items: start;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.carrito__juegos {
+    width: 80%;
+}
+
+.resumen {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.carrito__titulo-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+
+.carrito__titulo {
+    font-size: 28px;
+    margin: 0;
+    text-align: center;
+}
+
+/* juegos */
+
+.juego-carrito {
+
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr) 90px;
+    gap: 15px;
+    align-items: center;
+    padding: 15px;
+    background-color: #060a16;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
+}
+
+.juego-carrito__imagen-contenedor {
+    position: relative;
+    height: 95px;
+}
+
+.juego-carrito__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+
+}
+
+.juego-carrito__descuento {
+    position: relative;
+    align-items: left;
+    background-color: #1bc40c;
+    color: white;
+    padding: 4px 7px;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.juego-carrito__información {
+    min-width: 0;
+}
+
+.juego-carrito__titulo {
+    font-size: 15px;
+    margin: 0 0 5px;
+    text-align: left;
+}
+
+.juego-carrito__descripcion {
+    color: #00f0ff;
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0 0 5px;
+
+}
+
+.juego-carrito__opciones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.juego-carrito__precio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    font-size: 18px;
+}
+
+/*Resumen pedido*/
+
+.resumen {
+    background-color: #060a16;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
+    padding: 18px;
+}
+
+.resumen__cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resumen__titulo {
+    font-size: 15px;
+    margin: 0;
+}
+
+.resumen__linea {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 7px 0;
+    font-size: 11px;
+    color: white;
+}
+
+.resumen__linea-descuento strong {
+    color: #00f0ff;
+}
+
+/* total */
+
+.resumen__totalpedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.resumen__total {
+    color: #00f0ff;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.resumen__total-precio {
+
+    font-size: 25px;
+    color: white;
+}
+
+/* botones pago */
+
+.resumen__pagar {
+    width: 100%;
+    padding: 15px 8px;
+    border: none;
+    border-radius: 2px;
+    background-color: #072332;
+    color: #00f0ff;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+
+.resumen__pagar:hover {
+    background-color: #00f0ff;
+    color: black;
+}
+
+/* métodos de pago */
+
+.resumen__metodos {
+    display: flex;
+    /* flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; */
+    padding: 12px 5px;
+    /* border: none;
+    border-radius: 2px;
+    color: #00f0ff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    flex: 1; */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.resumen__metodos-lista {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+}
+
+.resumen__metodo {
+    flex: 1;
+    margin: 2px;
+}
+
+.resumen__metodo button {
+    width: 100%;
+    padding: 15px 8px;
+    border: none;
+    border-radius: 2px;
+    background-color: #072332;
+    color: #00f0ff;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.resumen__metodo button:hover {
+    background-color: #00f0ff;
+    color: black;
+}
+
+.resumen__metodo span {
+    font-size: 15px;
+
+}
+
+.resumen__metodo {
+    margin: 0;
+}

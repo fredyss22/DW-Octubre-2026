@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carrito.css">
+
 
     <title>Nexusstore</title>
 </head>
@@ -59,8 +61,7 @@
                 </form>
 
                 <!-- carrito -->
-                <div class="carrito">
-
+                <div>
                     <a href="carrito.html" class="carrito__boton">Agregar al carrito 🛒</a>
                 </div></a>
             </div>
@@ -73,7 +74,112 @@
     </header>
 
     <!-- inicio main -->
-    <main>
+    <main class="carrito">
+        <div class="carrito__contenido">
+            <h1 class="carrito__titulo">CARRITO DE COMPRA</h1>
+            <section class="carrito__juegos">
+
+                <!-- producto 1 -->
+                <article class="juego-carrito">
+                    <div class="juego-carrito__imagen-contenedor">
+                        <img class="juego-carrito__imagen" src="images/juegos/racing.jpg">
+
+                    </div>
+                    <div class="juego-carrito__informacion">
+                        <h2 class="juego-carrito__titulo">
+                            RACING
+                            <span class="juego-carrito__descuento">-20%</span>
+                        </h2>
+                        <P class="juego-carrito__descripcion">
+                            incluye juego + 1 mes
+                        </P>
+
+                    </div>
+                    <div class="juego-carrito__precio">
+                        <strong>23.99</strong>
+
+                    </div>
+
+                </article>
+
+                <article class="juego-carrito">
+                    <div class="juego-carrito__imagen-contenedor">
+                        <img class="juego-carrito__imagen" src="images/juegos/racing.jpg">
+
+                    </div>
+                    <div class="juego-carrito__informacion">
+                        <h2 class="juego-carrito__titulo">
+                            RACING
+                        </h2>
+                        <P class="juego-carrito__descripcion">
+                            incluye juego + 1 mes
+
+                        </P>
+
+                    </div>
+                    <div class="juego-carrito__precio">
+                        <strong>49.99</strong>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- compra -->
+
+            <aside class="resumen">
+                <div class="resumen__cabecera">
+                    <h2 class="resumen__titulo">RESUMEN DE CAMPRA</h2>
+
+                </div>
+
+                <div class="resumen__linea">
+                    <span>Subtotal</span>
+                    <strong>73.98</strong>
+
+                </div>
+                <div class="resumen__linea resumen__linea-descuento">
+                    <span>Descuento</span>
+                    <strong>-19.99</strong>
+
+                </div>
+
+                <!-- total -->
+                <div class="resumen__totalpedido">
+                    <div>
+                        <span class="resumen__total">TOTAL A PAGAR</span>
+                    </div>
+                    <strong class="resumen__total-precio">69.18</strong>
+                </div>
+                <button class="resumen__pagar">
+                    PAGAR
+                </button>
+
+                <!-- métodos de pago -->
+                <div class="resumen__metodos">
+                    <div class="resumen__metodos-lista">
+
+                        <div class="resumen__metodo">
+                            <button>TARJETA</button>
+
+                        </div>
+                        <div class="resumen__metodo">
+                            <button>PAYPAL</button>
+
+                        </div>
+                        <div class="resumen__metodo">
+                            <button>GOOGLEPAY</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </aside>
+
+        </div>
 
     </main>
 
