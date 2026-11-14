@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/registro.css">
 
     <title>Nexusstore</title>
 </head>
@@ -73,7 +74,55 @@
     </header>
 
     <!-- inicio main -->
-    <main>
+    <main class="registro">
+        <section class="registro__inicio">
+            <h1 class="registro__titulo">CREAR CUENTA</h1>
+
+        </section>
+
+        <section class="registro__contenedor">
+            <form class="registro__formulario">
+
+                <div class="registro__campo">
+                    <label class="registro__label">
+                        Nombre
+                    </label>
+                    <input class="registro__input" type="text" id="nombre" placeholder="" required>
+                </div>
+                <div class="registro__campo">
+                    <label class="registro__label">
+                        Apellido
+                    </label>
+                    <input class="registro__input" type="text" id="apellido" placeholder="" required>
+                </div>
+                <div class="registro__campo">
+                    <label class="registro__label">
+                        Corrreo electrónico
+                    </label>
+                    <input class="registro__input" type="email" id="correo" placeholder="" required>
+                </div>
+                <div class="registro__campo">
+                    <label class="registro__label">
+                        Contraseña
+                    </label>
+                    <input class="registro__input" type="password" id="clave" placeholder="" required>
+                </div>
+                <div class="registro__campo">
+                    <label class="registro__label">
+                        Confirmar contraseña
+                    </label>
+                    <input class="registro__input" type="password" id="confirma_clave" placeholder="" required>
+                </div>
+                <button class="registro__boton" type="submit">
+                    CREAR CUENTA
+                </button>
+                <P class="registro__enlace">
+                    Ya tienes una cuenta?
+                    <a href="iniciar.html">Iniciar sesión</a>
+                </P>
+            </form>
+
+        </section>
 
     </main>
 
