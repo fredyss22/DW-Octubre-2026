@@ -1,0 +1,324 @@
+/*Contenido principal*/
+.contenedor-oferta {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 1400px;
+    margin: 35px auto;
+    box-sizing: border-box;
+
+}
+
+.contenedor-oferta__destacadas {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: none;
+    margin: 0 0 25px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/*primera fila */
+
+.oferta__tarjeta {
+
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    /* overflow: hidden; */
+    background-color: #060a16;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
+
+}
+
+.oferta__tarjeta:hover {
+    transform: translate(-5px);
+}
+
+.oferta__tarjeta .oferta__imagen {
+
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+
+}
+
+.oferta__tarjeta .oferta__informacion {
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 18px;
+    min-width: 0;
+
+}
+
+.oferta__tarjeta .oferta__categoria {
+
+    margin: 0 0 10px;
+    color: white;
+    font-size: 9px;
+
+}
+
+.oferta__categoria-accion {
+
+    background-color: rgba(255, 0, 0, 0.349);
+    color: white;
+}
+
+.oferta__categoria-aventura {
+
+    background-color: rgba(128, 0, 128, 0.445);
+    color: white;
+}
+
+.oferta__categoria-deporte {
+
+    background-color: rgba(0, 128, 0, 0.534);
+    color: white;
+}
+
+.oferta__categoria-estrategia {
+
+    background-color: rgba(0, 0, 255, 0.473);
+    color: white;
+}
+
+.oferta__tarjeta .oferta__titulo {
+    margin: 0 0 12px;
+    color: #00f0ff;
+    font-size: 20px;
+}
+
+.oferta__tarjeta .oferta__descripcion {
+
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+
+}
+
+.oferta__tarjeta .oferta__precio {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+    color: white;
+    padding: 15px;
+}
+
+.oferta__tarjeta .oferta__descuento {
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: #1bc40c;
+    color: white;
+    font-size: bold;
+}
+
+.oferta__tarjeta .oferta__valor {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.oferta__tarjeta .oferta__boton {
+
+    width: 100%;
+    padding: 12px;
+    background-color: #072332;
+    color: #00f0ff;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.oferta__tarjeta .oferta__boton:hover {
+    background-color: #00f0ff;
+    color: black;
+}
+
+
+/*lista juegos*/
+
+.contenedor-oferta section.oferta {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0 0 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #060a16;
+    color: white;
+
+}
+
+.oferta__lista {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.oferta__juego {
+
+    display: grid;
+    grid-template-columns: 75px minmax(180px, 1fr) 55px 125px 85px 130px;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    padding: 12px 8px;
+    border: 1px solid rgb(24, 23, 23);
+}
+
+.oferta__juego:hover {
+    background-color: #072332;
+}
+
+.oferta__juego .oferta__imagen {
+    width: 70%;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 2px;
+
+}
+
+/* .oferta__juego .oferta__informacion {
+    min-width: 0;
+} */
+
+.oferta__juego .oferta__titulo {
+    margin: 0 0 6px;
+    color: white;
+    font-size: 13px;
+}
+
+.oferta__detalles {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+}
+
+.oferta__valoracion {
+    color: #00f0ff;
+    font-weight: bold;
+}
+
+/*Descuento*/
+.oferta__juego .oferta__descuento {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 26px;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #1bc40c;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: center;
+}
+
+.oferta__juego .oferta__precio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* align-self: center; */
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+
+}
+
+.oferta__juego .oferta__boton {
+    width: 100%;
+    padding: 9px 8px;
+    border: none;
+    border: 1px solid rgb(24, 23, 23);
+    font-size: 10px;
+    font-weight: bold;
+    /* white-space: nowrap; */
+    cursor: pointer;
+
+}
+
+.oferta__boton-ficha {
+    background-color: #072332;
+    color: #00f0ff;
+}
+
+.oferta__boton-ficha:hover {
+    background-color: #00f0ff;
+    color: black;
+}
+
+.oferta__boton-carrito {
+    background-color: #072332;
+    color: #00f0ff;
+}
+
+.oferta__boton-carrito:hover {
+    background-color: #00f0ff;
+    color: black;
+}
+
+/*categorías*/
+
+.oferta-categorias {
+    width: 100%;
+    /* max-width: none; */
+    margin: 0 0 25px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #060a16;
+    color: white;
+
+}
+
+.oferta-categorias__titulo {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(24, 23, 23);
+    font-size: 17px;
+}
+
+.oferta-categorias__lista {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.oferta-categorias__tarjeta {
+    padding: 8px;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
+    background-color: #060a16;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.oferta-categorias__tarjeta:hover {
+    transform: translate(-5px);
+}
+
+.oferta-categorias__tarjeta img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+}
+
+.oferta-categorias__nombre {
+    margin: 10px 0 5px;
+    color: white;
+    font-size: 9px;
+}
