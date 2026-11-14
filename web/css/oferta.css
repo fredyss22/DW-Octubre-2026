@@ -173,7 +173,7 @@
     gap: 12px;
     min-width: 0;
     padding: 12px 8px;
-    border: 1px solid rgb(24, 23, 23);
+    border-bottom: 1px solid rgb(24, 23, 23);
 }
 
 .oferta__juego:hover {
@@ -224,7 +224,7 @@
     text-align: center;
 }
 
-.oferta__juego>.oferta__precio {
+.oferta__juego .oferta__precio {
     display: flex;
     align-items: center;
     justify-content: center;
