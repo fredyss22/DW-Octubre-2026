@@ -41,7 +41,6 @@ nav a:hover {
     background-color: #767776;
 }
 
-/* Estilos de las páginas de la actividad del día 11 */
 .pagina-dia11 {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -51,4 +50,45 @@ nav a:hover {
 .pagina-dia11 a:focus {
     outline: 3px solid #2673b8;
     outline-offset: 3px;
+}
+
+/*Nivel 1*/
+
+.contenedorn1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.cuadradon1 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    transition: 0.5s ease;
+}
+
+.primero {
+    background-color: red;
+}
+
+.primero:hover {
+    width: 200px;
+}
+
+.segundo {
+    background-color: blue;
+}
+
+.segundo:hover {
+    height: 200px;
+}
+
+.tercero {
+    background-color: green;
+}
+
+.tercero:hover {
+    width: 200px;
+    height: 200px;
 }
