@@ -1,0 +1,347 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: black;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+nav a {
+    color: #C7D5E0;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    color: #deeef7;
+    background-color: #767776;
+}
+
+.pagina-dia11 {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+.pagina-dia11 a:focus {
+    outline: 3px solid #2673b8;
+    outline-offset: 3px;
+}
+
+/*Nivel 1*/
+
+.contenedorn1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px;
+}
+
+.cuadradon1 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    transition: 0.5s ease;
+}
+
+.primero {
+    background-color: red;
+}
+
+.primero:hover {
+    width: 200px;
+}
+
+.segundo {
+    background-color: blue;
+}
+
+.segundo:hover {
+    height: 200px;
+}
+
+.tercero {
+    background-color: green;
+}
+
+.tercero:hover {
+    width: 200px;
+    height: 200px;
+}
+
+.cambiarn1 {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin: 30px auto;
+    display: flex;
+    transition: 0.5s ease;
+
+}
+
+.cambiarn1:hover {
+    width: 200px;
+    height: 200px;
+    background-color: #2673b8;
+}
+
+.texton1 {
+    width: 150px;
+    height: 150px;
+    background-color: #222;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.texton1 p {
+    display: none;
+    color: white;
+    font-weight: bold;
+}
+
+.texton1:hover p {
+    display: block;
+}
+
+/*Nivel 2*/
+
+.contenedorn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 50px;
+}
+
+.contenedorn2 div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadrado1n2 {
+    background-color: yellow;
+    animation: ancho2 2s infinite alternate;
+}
+
+@keyframes ancho2 {
+    from {
+        width: 100px;
+    }
+
+    to {
+        width: 200px;
+    }
+}
+
+/*rotación*/
+
+.cuadrado2n2 {
+    background-color: blue;
+    animation: rotacion2 3s infinite linear;
+
+}
+
+@keyframes rotacion2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*cambia*/
+.cuadrado3n2 {
+    background-color: purple;
+    animation: colores2 3s infinite;
+}
+
+@keyframes colores2 {
+    0% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+/*texto*/
+
+.parpadeon2 {
+    font-size: 24px;
+    font-weight: bold;
+    animation: parpadear2 1s infinite;
+}
+
+@keyframes parpadear2 {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*cuadro movimiento*/
+
+.pistan2 {
+    width: 500px;
+    height: 120px;
+    border: 1px solid black;
+    margin: 30px auto;
+    position: relative;
+}
+
+.movimientosn2 {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    position: absolute;
+    top: 35px;
+    left: 0;
+
+    animation: mover2 3s infinite alternate ease-in-out;
+}
+
+@keyframes mover2 {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 450px;
+    }
+}
+
+/*  Nivel 3*/
+
+.contenedorn3 {
+    width: 300px;
+    height: 100px;
+    margin: 20px auto;
+    border: 2px solid black;
+}
+
+.scrolln3 {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    animation: mover3 1s linear both;
+    animation-timeline: scroll(root block);
+}
+
+@keyframes mover3 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(220px);
+    }
+}
+
+.espacion3 {
+
+    height: 500px;
+}
+
+.rellenon3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: cambiar3 3s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cambiar3 {
+    from {
+        background-color: red;
+        transform: scale(1);
+    }
+
+    to {
+        background-color: purple;
+        transform: scale(1.5);
+    }
+}
+
+/*Cubic*/
+.beziercontenedor {
+    width: 500px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 30px auto;
+    position: relative;
+}
+
+.beziern3 {
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    animation: movimiento3 3s infinite alternate;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 1.55);
+}
+
+@keyframes movimiento3 {
+    from {
+        left: 0;
+
+    }
+
+    to {
+        left: 420px;
+    }
+
+}
