@@ -24,20 +24,41 @@
         </nav>
     </header>
     </header>
-    <main>
-        <div class="contenedorn1">
-            <div class="cuadradon1 primero">
+    <main class="contenedor">
+        <form class="formulario" action="#" method="post">
+            <h1>Contacto</h1>
+
+            <div class="grupo">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Ingresa el nombre" required>
             </div>
-            <div class="cuadradon1 segundo">
+            <div class="grupo">
+                <label for="nombre">Email</label>
+                <input type="text" placeholder="Ingresa el email" required>
             </div>
-            <div class="cuadradon1 tercero">
+            <div class="grupo">
+                <label for="nombre">Teléfono</label>
+                <input type="text" placeholder="Ingresa el Teléfono" required>
             </div>
-        </div>
-        <div class="cambiarn1">
-        </div>
-        <div class="texton1">
-            <p>Muestra el texto</p>
-        </div>
+            <div class="grupo">
+                <label for="nombre">Tema de consulta</label>
+                <input type="text" placeholder="Ingresa el nombre">
+                <details id="temas">
+                    <option value="Información">
+                    <option value="Soporte Técnico">
+                    <option value="Empleo">
+                    <option value="Otros">
+                </details>
+            </div>
+            <div class="grupo">
+                <label for="nombre">Mensaje</label>
+                <input type="text" placeholder="(Opcional)" required>
+            </div>
+            <button type="submit" class="boton">Enviar</button>
+
+        </form>
+
+
     </main>
 
 </body>

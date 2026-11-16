@@ -52,296 +52,77 @@ nav a:hover {
     outline-offset: 3px;
 }
 
-/*Nivel 1*/
-
-.contenedorn1 {
+body {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 30px;
+    flex-direction: column;
+    min-height: 100px;
 }
 
-.cuadradon1 {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    transition: 0.5s ease;
+header {
+    width: 100%;
 }
 
-.primero {
-    background-color: red;
+.contenedor {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
 }
 
-.primero:hover {
-    width: 200px;
-}
-
-.segundo {
-    background-color: blue;
-}
-
-.segundo:hover {
-    height: 200px;
-}
-
-.tercero {
-    background-color: green;
-}
-
-.tercero:hover {
-    width: 200px;
-    height: 200px;
-}
-
-.cambiarn1 {
-    width: 100px;
-    height: 100px;
-    background-color: orange;
-    margin: 30px auto;
-    display: flex;
-    transition: 0.5s ease;
+.formulario {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px black;
 
 }
 
-.cambiarn1:hover {
-    width: 200px;
-    height: 200px;
-    background-color: #2673b8;
+.formulario h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
 }
 
-.texton1 {
-    width: 150px;
-    height: 150px;
-    background-color: #222;
-    margin: 30px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.grupo {
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 8px;
 
 }
 
-.texton1 p {
-    display: none;
-    color: white;
-    font-weight: bold;
-}
-
-.texton1:hover p {
+.grupo label {
     display: block;
-}
-
-/*Nivel 2*/
-
-.contenedorn2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    margin: 50px;
-}
-
-.contenedorn2 div {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cuadrado1n2 {
-    background-color: yellow;
-    animation: ancho2 2s infinite alternate;
-}
-
-@keyframes ancho2 {
-    from {
-        width: 100px;
-    }
-
-    to {
-        width: 200px;
-    }
-}
-
-/*rotación*/
-
-.cuadrado2n2 {
-    background-color: blue;
-    animation: rotacion2 3s infinite linear;
-
-}
-
-@keyframes rotacion2 {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/*cambia*/
-.cuadrado3n2 {
-    background-color: purple;
-    animation: colores2 3s infinite;
-}
-
-@keyframes colores2 {
-    0% {
-        background-color: yellow;
-    }
-
-    50% {
-        background-color: blue;
-    }
-
-    100% {
-        background-color: red;
-    }
-}
-
-/*texto*/
-
-.parpadeon2 {
-    font-size: 24px;
+    margin-bottom: 8px;
+    color: black;
     font-weight: bold;
-    animation: parpadear2 1s infinite;
+    font-size: 14px;
 }
 
-@keyframes parpadear2 {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+.grupo input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 7px;
+    border: 1px solid #767776;
+    outline: none;
 }
 
-/*cuadro movimiento*/
+.boton {
+    width: 100%;
+    padding: 14px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
 
-.pistan2 {
-    width: 500px;
-    height: 120px;
-    border: 1px solid black;
-    margin: 30px auto;
-    position: relative;
 }
 
-.movimientosn2 {
-    width: 50px;
-    height: 50px;
-    background-color: orange;
-    position: absolute;
-    top: 35px;
-    left: 0;
-
-    animation: mover2 3s infinite alternate ease-in-out;
+.boton:hover {
+    background-color: #222;
 }
 
-@keyframes mover2 {
-    from {
-        left: 0;
-    }
-
-    to {
-        left: 450px;
-    }
-}
-
-/*  Nivel 3*/
-
-.contenedorn3 {
-    width: 300px;
-    height: 100px;
-    margin: 20px auto;
-    border: 2px solid black;
-}
-
-.scrolln3 {
-    width: 80px;
-    height: 80px;
-    background-color: blue;
-    display: flex;
-    align-items: center;
-    animation: mover3 1s linear both;
-    animation-timeline: scroll(root block);
-}
-
-@keyframes mover3 {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(220px);
-    }
-}
-
-.espacion3 {
-
-    height: 500px;
-}
-
-.rellenon3 {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: cambiar3 3s ease;
-    animation-fill-mode: forwards;
-}
-
-@keyframes cambiar3 {
-    from {
-        background-color: red;
-        transform: scale(1);
-    }
-
-    to {
-        background-color: purple;
-        transform: scale(1.5);
-    }
-}
-
-/*Cubic*/
-.beziercontenedor {
-    width: 500px;
-    height: 100px;
-    border: 2px solid black;
-    margin: 30px auto;
-    position: relative;
-}
-
-.beziern3 {
-    width: 80px;
-    height: 80px;
-    background-color: orange;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    animation: movimiento3 3s infinite alternate;
-    animation-timing-function: cubic-bezier(0.68, -0.55, 1.55);
-}
-
-@keyframes movimiento3 {
-    from {
-        left: 0;
-
-    }
-
-    to {
-        left: 420px;
-    }
-
+.boton:active {
+    transform: scale3d(0.98);
 }
