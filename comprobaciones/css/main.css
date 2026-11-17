@@ -73,7 +73,7 @@ img {
 }
 
 .texto-principal p {
-    font-size: 6px;
+    font-size: 20px;
     color: gray;
     margin-bottom: 30px;
 
@@ -83,7 +83,7 @@ img {
     display: inline-block;
     background-color: white;
     padding: 12px 24px;
-    font-size: 6px;
+    font-size: 15px;
     font-weight: bold;
 
 }
@@ -105,7 +105,7 @@ img {
 }
 
 .introduccion h2 {
-    font-size: 13px;
+    font-size: 20px;
     margin-bottom: 30px;
 }
 
@@ -141,13 +141,14 @@ img {
 }
 
 .tarjeta-servicio h3 {
-    font-size: 10px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 12px;
+    color: black;
 }
 
 .tarjeta-servicio {
-    font-size: 5px;
+    font-size: 15px;
     color: gray;
     margin-bottom: 15px;
 }
@@ -189,4 +190,8 @@ img {
     gap: 40px;
     font-size: 5px;
     color: gray;
+}
+
+.columna-footer{
+    font-size: 10px;
 }

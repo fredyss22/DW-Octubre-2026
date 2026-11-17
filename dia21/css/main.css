@@ -126,3 +126,66 @@ header {
 .boton:active {
     transform: scale3d(0.98);
 }
+
+/*Buscador*/
+
+.buscador {
+    display: flex;
+    width: 500px;
+    height: 38px;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.buscador input {
+
+    flex: 1;
+    min-width: 0;
+    padding: 0 12px;
+    background-color: #404041;
+    color: white;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 14px;
+
+}
+
+.buscador button {
+
+    width: 45px;
+    border: none;
+    background-color: rgb(75, 74, 74);
+    color: rgb(21, 20, 20);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.buscador button:hover {
+
+    background-color: #00f0ff;
+
+}
+
+/*logo*/
+.logo-noticia{
+    flex-shrink: 0;
+}
+
+.logo-noticia img {
+    display: block;
+    width: 155px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Cagtegoría Imagenes noticias*/
+
+.imagen-categoria{
+    width: 400px;
+    height: 200px;
+}
+
+.imagen-categoria:hover{
+    transform: scale(1.1);
+}
