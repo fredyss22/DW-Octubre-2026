@@ -14,7 +14,7 @@ body {
 
 a {
     text-decoration: none;
-    color: red;
+    color: black;
 
 }
 
@@ -30,16 +30,18 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    font-size: 8px;
+    font-size: 20px;
 }
 
 .logotipo {
     display: inline-block;
+    width: auto;
+    height:20px;
 }
 
 .logotipo img {
-    height: 24px;
-    width: auto;
+    width: 24px;
+    height: auto;
     object-fit: contain;
 
 }
