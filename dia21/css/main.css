@@ -58,6 +58,14 @@ body {
     min-height: 100px;
 }
 
+footer {
+    text-align: center;
+    background: black;
+    margin-top: 30px;
+    padding: 15px;
+    color: white;
+}
+
 header {
     width: 100%;
 }
