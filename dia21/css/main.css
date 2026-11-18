@@ -120,7 +120,7 @@ header {
     border-radius: 7px;
     border: 1px solid #767776;
     outline: none;
-    background-color: #767776;
+    background-color: #d4d4d4;
 }
 
 .boton {
@@ -353,8 +353,8 @@ header {
 .noticias-informe-imagen {
     display: block;
     width: 75%;
-    min-width: 700px;
-    max-width: 600px;
+    min-width: 930px;
+    /* max-width: 600px; */
     height: 320px;
     border-radius: 10px;
     margin: 20px auto;
