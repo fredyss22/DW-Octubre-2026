@@ -1,8 +1,24 @@
+:root {
+    --color-body: #09132b;
+    --color-superficie: #060a16;
+    --color-busqueda: #111726;
+    --color-texto: white;
+    --color-verderesalto: #00f0ff;
+    --color-bordes: rgb(24, 23, 23);
+    --color-descuento: #1bc40c;
+    --color-fondotexto: black;
+    --color-accion: rgba(255, 0, 0, 0.349);
+    --color-aventura: rgba(128, 0, 128, 0.445);
+    --color-deportes: rgba(0, 128, 0, 0.534);
+    --color-estrategia: rgba(0, 0, 255, 0.473);
+    --color-boton: #072332;
+}
+
 /* colores 
-lineas: rgb(24, 23, 23);
-azul body #09132b 
- footer #060a16
-azul fluorecente #00f0ff
+lineas:  var(--color-bordes);
+azul body  var(--color-body)
+ footer  var(--color-superficie)
+azul fluorecente   var(--color-verderesalto)
 barra búsqueda #111726*/
 
 /*Footer*/
@@ -20,8 +36,8 @@ html {
 body {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: #09132b;
-    color: white;
+    background-color: var(--color-body);
+    color: var(--color-texto);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -40,8 +56,7 @@ main {
 .contenedor-oferta,
 .pie-pagina__contenedor,
 .carrito {
-    width: 70%;
-    max-width: 1400px;
+    width: min(90%, 1400px);
     margin: 0 auto;
 
 }
@@ -52,9 +67,9 @@ main {
 .header-inicio {
 
     width: 100%;
-    background-color: #060a16;
+    background-color: var(--color-superficie);
     padding: 18px 5px;
-    border: 1px solid rgb(24, 23, 23);
+    border: 1px solid var(--color-bordes);
 
 }
 
@@ -112,7 +127,7 @@ main {
 
 .navegacion-pag {
 
-    color: #C7D5E0;
+    color: var(--color-texto);
     text-decoration: none;
     display: block;
     padding: 10px 14px;
@@ -122,13 +137,13 @@ main {
 
 .navegacion-pag:hover {
 
-    color: #030303;
-    background-color: #00f0ff;
+    color: var(--color-fondotexto);
+    background-color: var(--color-verderesalto);
 }
 
 .navegacion-pag.activo {
-    color: #030303;
-    background-color: #00f0ff;
+    color: var(--color-fondotexto);
+    background-color: var(--color-verderesalto);
 
 }
 
@@ -144,7 +159,7 @@ main {
     align-items: center;
     gap: 10px;
     background: transparent;
-    color: white;
+    color: var(--color-texto);
     font-size: 15px;
     cursor: pointer;
     border: none;
@@ -168,10 +183,9 @@ main {
     right: 0;
     min-width: 160px;
     margin-top: 10px;
-    background: #09132b;
+    background: var(--color-body);
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     z-index: 10;
 
 }
@@ -180,14 +194,14 @@ main {
 
     display: block;
     padding: 12px 15px;
-    color: white;
+    color: var(--color-texto);
     text-decoration: none;
 
 }
 
 .usuario__menu a:hover {
 
-    background-color: #111726;
+    background-color: var(--color-busqueda);
 
 }
 
@@ -213,7 +227,7 @@ main {
     display: flex;
     width: 500px;
     height: 38px;
-    border: 1px solid rgb(24, 23, 23);
+    border: 1px solid var(--color-bordes);
     border-radius: 2px;
     overflow: hidden;
 }
@@ -223,8 +237,8 @@ main {
     flex: 1;
     min-width: 0;
     padding: 0 12px;
-    background-color: #111726;
-    color: white;
+    background-color: var(--color-busqueda);
+    color: var(--color-texto);
     border: none;
     outline: none;
     font-size: 14px;
@@ -235,15 +249,15 @@ main {
 
     width: 45px;
     border: none;
-    background-color: #111726;
-    color: white;
+    background-color: var(--color-busqueda);
+    color: var(--color-texto);
     font-size: 22px;
     cursor: pointer;
 }
 
 .buscador button:hover {
 
-    background-color: #00f0ff;
+    background-color: var(--color-verderesalto);
 
 }
 
@@ -264,18 +278,18 @@ main {
     padding: 9px 15px;
     text-decoration: none;
     background-color: transparent;
-    border: 0.1px solid #00f0ff;
+    border: 0.1px solid var(--color-verderesalto);
     border-radius: 5px;
-    color: #00f0ff;
+    color: var(--color-verderesalto);
     font-size: 15px;
     cursor: pointer;
 
 }
 
 .carrito__boton:hover {
-    color: #030303;
-    background-color: #00f0ff;
-    border: 1px solid rgb(24, 23, 23);
+    color: var(--color-fondotexto);
+    background-color: var(--color-verderesalto);
+    border: 1px solid var(--color-bordes);
 
 }
 
@@ -283,9 +297,9 @@ main {
 
 .pie-pagina {
     width: 100%;
-    background-color: #060a16;
-    border: 1px solid rgb(24, 23, 23);
-    color: white;
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-bordes);
+    color: var(--color-texto);
     padding: 45px 30px 25px;
     flex-shrink: 0;
     margin-top: auto;
@@ -315,10 +329,10 @@ main {
     height: 25px;
     object-fit: contain;
     padding: 5px;
-    background-color: #111726;
-    border: 1px solid rgb(24, 23, 23);
+    background-color: var(--color-busqueda);
+    border: 1px solid var(--color-bordes);
     border-radius: 2px;
-    filter: black(5) brightness(0) invert(1);
+    filter: var(--color-fondotexto)(5) brightness(0) invert(1);
     transition: filter 0.3s ease, transform 0.3s ease;
     margin-top: 12px;
 }
@@ -337,7 +351,7 @@ main {
 }
 
 .redes-sociales__enlace {
-    color: white;
+    color: var(--color-texto);
     border-radius: 2px;
     text-decoration: none;
     font-size: 15px;
@@ -345,8 +359,8 @@ main {
 }
 
 .redes-sociales a:hover img {
-    background-color: #00f0ff;
-    border: 1px solid #060a16;
+    background-color: var(--color-verderesalto);
+    border: 1px solid var(--color-superficie);
     transform: translateY(-3px);
 }
 
@@ -358,11 +372,11 @@ main {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: white;
+    color: var(--color-texto);
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 20px;
-    white-space: nowrap;
+    var(--color-texto)-space: nowrap;
 }
 
 .pie-pagina__lista {
@@ -374,20 +388,20 @@ main {
 }
 
 .pie-pagina__enlace {
-    color: white;
+    color: var(--color-texto);
     text-decoration: none;
     font-size: 12px;
     transition: color 0.3s ease;
 }
 
 .pie-pagina__enlace:hover {
-    color: #00f0ff;
+    color: var(--color-verderesalto);
 }
 
 .pie-pagina__linea {
     width: 100%;
     height: 1px;
-    background-color: rgb(24, 23, 23);
+    background-color: var(--color-bordes);
 }
 
 .pie-pagina__inferior {
@@ -395,13 +409,13 @@ main {
     align-items: center;
     justify-content: center;
     padding-top: 35px;
-    color: rgb(24, 23, 23);
+    color: var(--color-bordes);
 }
 
 .pie-pagina__derechos {
     font-size: 12px;
     line-height: 1.7;
-    color: white;
+    color: var(--color-texto);
     text-align: center;
 }
 
@@ -409,8 +423,8 @@ main {
 
 /*Contenido principal*/
 .contenedor__inicio {
-    background-color: #060a16;
-    border: 1px solid rgb(24, 23, 23);
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-bordes);
     padding: 20px;
     margin-top: 30px;
 }
@@ -419,7 +433,7 @@ main {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 20px;
-    color: white;
+    color: var(--color-texto);
     text-align: center;
 }
 
@@ -463,7 +477,7 @@ main {
 
 /*Título del juego*/
 .exhibicion-juego__titulo {
-    color: white;
+    color: var(--color-texto);
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -504,7 +518,7 @@ main {
 }
 
 .exhibicion-juego__precio {
-    color: white;
+    color: var(--color-texto);
     font-size: 24px;
     font-weight: bold;
 
@@ -512,8 +526,8 @@ main {
 
 .exhibicion-juego__descuento {
 
-    background-color: #1bc40c;
-    color: white;
+    background-color: var(--color-descuento);
+    color: var(--color-texto);
     padding: 8px 14px;
     font-size: 16px;
     font-weight: bold;
@@ -541,8 +555,8 @@ main {
 .oferta__tarjeta,
 .juego-carrito,
 .tarjeta-juego {
-    background-color: #060a16;
-    border: 1px solid rgb(24, 23, 23);
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-bordes);
     border-radius: 2px;
 }
 
@@ -588,14 +602,14 @@ main {
 
 .tarjeta-juego__titulo {
 
-    color: white;
+    color: var(--color-texto);
     font-size: 18px;
 
 }
 
 .tarjeta-juego__descripcion {
 
-    color: white;
+    color: var(--color-texto);
     font-size: 13px;
     line-height: 1.6;
 
@@ -612,8 +626,8 @@ main {
 }
 
 .tarjeta-juego__descuento {
-    background-color: #1bc40c;
-    color: white;
+    background-color: var(--color-descuento);
+    color: var(--color-texto);
     font-size: 14px;
     font-weight: bold;
     padding: 6px 10px;
@@ -621,7 +635,7 @@ main {
 }
 
 .tarjeta-juego__valor {
-    color: white;
+    color: var(--color-texto);
     font-size: 17px;
     font-weight: bold;
 }
@@ -653,8 +667,8 @@ main {
     width: 100%;
     padding: 15px;
     margin: 30px;
-    background-color: #060a16;
-    border: 1px solid rgb(24, 23, 23);
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-bordes);
     border-radius: 2px;
 
 }
@@ -666,27 +680,27 @@ main {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: white;
+    color: var(--color-texto);
 }
 
 .pagina-categoria .ordenar-tienda__seleccion {
     padding: 10px;
-    background-color: #111726;
-    color: white;
-    border: 1px solid rgb(24, 23, 23);
+    background-color: var(--color-busqueda);
+    color: var(--color-texto);
+    border: 1px solid var(--color-bordes);
     border-radius: 2px;
     cursor: pointer;
 }
 
 .pagina-categoria .ordenar-tienda__seleccion option {
 
-    background-color: #111726;
+    background-color: var(--color-busqueda);
 
 }
 
 .pagina-categoria .herramientas-tienda {
 
-    background-color: #060a16;
+    background-color: var(--color-superficie);
 }
 
 /*visualización*/
@@ -702,23 +716,23 @@ main {
 .pagina-categoria .visualizacion-tienda__boton {
     width: 40px;
     height: 40px;
-    background-color: #111726;
-    color: white;
-    border: 1px solid rgb(24, 23, 23);
+    background-color: var(--color-busqueda);
+    color: var(--color-texto);
+    border: 1px solid var(--color-bordes);
     border-radius: 2px;
     cursor: pointer;
 
 }
 
 .pagina-categoria .visualizacion-tienda__boton:hover {
-    background-color: #00f0ff;
-    color: white;
+    background-color: var(--color-verderesalto);
+    color: var(--color-texto);
 }
 
 .pagina-categoria .visualizacion-activa {
-    background-color: #111726;
-    color: white;
-    border: 1px solid rgb(24, 23, 23);
+    background-color: var(--color-busqueda);
+    color: var(--color-texto);
+    border: 1px solid var(--color-bordes);
 }
 
 /*contenido categoría*/
@@ -737,7 +751,7 @@ main {
 .pagina-categoria .filtros {
 
     padding: 20px;
-    background-color: #060a16;
+    background-color: var(--color-superficie);
     border-radius: 2px;
     height: auto;
 
@@ -749,7 +763,7 @@ main {
 
 .pagina-categoria .filtros h3 {
     margin-top: 25px;
-    color: #00f0ff;
+    color: var(--color-verderesalto);
 }
 
 .pagina-categoria .filtros label {
@@ -769,8 +783,8 @@ main {
 }
 
 .pagina-categoria .juegos {
-    background-color: #060a16;
-    border: 1px solid rgb(24, 23, 23);
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-bordes);
     border-radius: 2px;
     padding: 12px;
     display: flex;
@@ -822,8 +836,8 @@ main {
     flex-direction: column;
     display: flex;
     width: 100%;
-    background-color: #060a16;
-    border: 1px solid rgb(24, 23, 23);
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-bordes);
     padding: 10px;
     gap: 10px;
 }
@@ -831,8 +845,8 @@ main {
 /* video principal */
 .resena__video-principal {
     width: 100%;
-    background-color: #060a16;
-    border: 1px solid rgb(24, 23, 23);
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-bordes);
     padding: 10px;
     gap: 10px;
     overflow: hidden;
@@ -887,9 +901,9 @@ main {
 .resena__ficha,
 .resena__valoracion {
     padding: 10px;
-    border: 1px solid rgb(24, 23, 23);
+    border: 1px solid var(--color-bordes);
     border-radius: 2px;
-    background-color: #060a16;
+    background-color: var(--color-superficie);
 
 }
 
@@ -907,7 +921,7 @@ main {
 
 /* estrellas */
 .resena__estrellas {
-    color: #00f0ff;
+    color: var(--color-verderesalto);
     font-size: 20px;
     letter-spacing: 3px;
 }
@@ -930,9 +944,9 @@ main {
 /*columna de descripción*/
 .juego__resena-descripcion {
     padding: 15px;
-    color: #00f0ff;
-    background-color: #060a16;
-    border: 1px solid rgb(24, 23, 23);
+    color: var(--color-verderesalto);
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-bordes);
     border-radius: 2px;
 }
 
@@ -943,19 +957,19 @@ main {
 }
 
 .juego__resena-texto {
-    background-color: #060a16;
+    background-color: var(--color-superficie);
     font-size: 16px;
     line-height: 1.7;
-    color: white;
+    color: var(--color-texto);
     text-align: justify;
 }
 
 /* columna requisitos */
 .juego__resena-requisitos {
     padding: 25px;
-    background-color: #060a16;
+    background-color: var(--color-superficie);
     border-radius: 2px;
-    color: #00f0ff;
+    color: var(--color-verderesalto);
 }
 
 .juego__resena-requisito {
@@ -963,8 +977,8 @@ main {
     flex-direction: column;
     gap: 5px;
     padding: 12px 0;
-    border-bottom: 1px solid rgb(24, 23, 23);
-    color: white;
+    border-bottom: 1px solid var(--color-bordes);
+    color: var(--color-texto);
 }
 
 .juego__resena-requisito:last-child {
@@ -974,12 +988,12 @@ main {
 .juego__resena-etiqueta {
     font-weight: bold;
     font-size: 14px;
-    color: white;
+    color: var(--color-texto);
 }
 
 .juego__resena-valor {
     font-size: 14px;
-    color: white;
+    color: var(--color-texto);
 }
 
 /*Ofertas*/
@@ -1038,7 +1052,7 @@ main {
 .oferta__tarjeta .oferta__categoria {
 
     margin: 0 0 10px;
-    color: white;
+    color: var(--color-texto);
     font-size: 9px;
 
 }
@@ -1046,40 +1060,40 @@ main {
 .tarjeta-juego__accion,
 .oferta__categoria-accion {
 
-    background-color: rgba(255, 0, 0, 0.349);
-    color: white;
+    background-color: var(--color-accion);
+    color: var(--color-texto);
 }
 
 .tarjeta-juego__aventura,
 .oferta__categoria-aventura {
 
-    background-color: rgba(128, 0, 128, 0.445);
-    color: white;
+    background-color: var(--color-aventura);
+    color: var(--color-texto);
 }
 
 .tarjeta-juego__deportes,
 .oferta__categoria-deporte {
 
-    background-color: rgba(0, 128, 0, 0.534);
-    color: white;
+    background-color: var(--color-deportes);
+    color: var(--color-texto);
 }
 
 .tarjeta-juego__estrategia,
 .oferta__categoria-estrategia {
 
-    background-color: rgba(0, 0, 255, 0.473);
-    color: white;
+    background-color: var(--color-estrategia);
+    color: var(--color-texto);
 }
 
 .oferta__tarjeta .oferta__titulo {
     margin: 0 0 12px;
-    color: #00f0ff;
+    color: var(--color-verderesalto);
     font-size: 20px;
 }
 
 .oferta__tarjeta .oferta__descripcion {
 
-    color: white;
+    color: var(--color-texto);
     font-size: 14px;
     line-height: 1.5;
 
@@ -1090,20 +1104,20 @@ main {
     align-items: center;
     gap: 12px;
     margin-top: auto;
-    color: white;
+    color: var(--color-texto);
     padding: 15px;
 }
 
 .oferta__tarjeta .oferta__descuento {
     padding: 6px 10px;
     border-radius: 2px;
-    background-color: #1bc40c;
-    color: white;
+    background-color: var(--color-descuento);
+    color: var(--color-texto);
     font-weight: bold;
 }
 
 .oferta__tarjeta .oferta__valor {
-    color: white;
+    color: var(--color-texto);
     font-size: 19px;
     font-weight: bold;
 }
@@ -1117,8 +1131,8 @@ main {
     margin: 0 0 25px;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #060a16;
-    color: white;
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
 
 }
 
@@ -1137,11 +1151,11 @@ main {
     gap: 12px;
     min-width: 0;
     padding: 12px 8px;
-    border-bottom: 1px solid rgb(24, 23, 23);
+    border-bottom: 1px solid var(--color-bordes);
 }
 
 .oferta__juego:hover {
-    background-color: #072332;
+    background-color: var(--color-boton);
 }
 
 .oferta__juego .oferta__imagen {
@@ -1158,7 +1172,7 @@ main {
 
 .oferta__juego .oferta__titulo {
     margin: 0 0 6px;
-    color: white;
+    color: var(--color-texto);
     font-size: 13px;
 }
 
@@ -1169,7 +1183,7 @@ main {
 }
 
 .oferta__valoracion {
-    color: #00f0ff;
+    color: var(--color-verderesalto);
     font-weight: bold;
 }
 
@@ -1181,8 +1195,8 @@ main {
     min-height: 26px;
     padding: 5px;
     border-radius: 2px;
-    background-color: #1bc40c;
-    color: white;
+    background-color: var(--color-descuento);
+    color: var(--color-texto);
     font-weight: bold;
     font-size: 11px;
     text-align: center;
@@ -1194,19 +1208,19 @@ main {
     justify-content: center;
     margin: 0;
     padding: 0;
-    color: white;
+    color: var(--color-texto);
     font-size: 12px;
     font-weight: bold;
-    white-space: nowrap;
+    var(--color-texto)-space: nowrap;
 
 }
 
 .oferta__juego .oferta__boton {
     width: 100%;
     padding: 9px 8px;
-    border: 1px solid rgb(24, 23, 23);
+    border: 1px solid var(--color-bordes);
     font-size: 10px;
-    white-space: nowrap;
+    var(--color-texto)-space: nowrap;
 
 }
 
@@ -1218,14 +1232,14 @@ main {
     margin: 0 0 25px;
     padding: 15px;
     box-sizing: border-box;
-    background-color: #060a16;
-    color: white;
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
 
 }
 
 .oferta-categorias__titulo {
     padding-bottom: 15px;
-    border-bottom: 1px solid rgb(24, 23, 23);
+    border-bottom: 1px solid var(--color-bordes);
     font-size: 17px;
 }
 
@@ -1238,9 +1252,9 @@ main {
 
 .oferta-categorias__tarjeta {
     padding: 8px;
-    border: 1px solid rgb(24, 23, 23);
+    border: 1px solid var(--color-bordes);
     border-radius: 2px;
-    background-color: #060a16;
+    background-color: var(--color-superficie);
     text-align: center;
     cursor: pointer;
 
@@ -1258,21 +1272,21 @@ main {
 
 .oferta-categorias__nombre {
     margin: 10px 0 5px;
-    color: white;
+    color: var(--color-texto);
     font-size: 9px;
 }
 
 .oferta-categorias__cantidad {
     margin: 0;
-    color: #00f0ff;
+    color: var(--color-verderesalto);
     font-size: 9px;
 }
 
 /*Registro*/
 
 .registro {
-    background: #09132b;
-    color: white;
+    background: var(--color-body);
+    color: var(--color-texto);
     padding: 40px 20px;
 }
 
@@ -1292,8 +1306,8 @@ main {
     max-width: 500px;
     margin: 0 auto;
     padding: 30px;
-    background-color: #060a16;
-    border: 1px solid rgb(24, 23, 23);
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-bordes);
     border-radius: 2px;
 }
 
@@ -1313,15 +1327,15 @@ main {
 .registro__label {
     font-size: 13px;
     font-weight: bold;
-    color: white;
+    color: var(--color-texto);
 }
 
 .registro__input {
     padding: 12px;
-    background-color: #111726;
-    border: 1px solid rgb(24, 23, 23);
+    background-color: var(--color-busqueda);
+    border: 1px solid var(--color-bordes);
     border-radius: 2px;
-    color: white;
+    color: var(--color-texto);
     font-size: 13px;
 
 }
@@ -1331,24 +1345,24 @@ main {
 .registro__enlace {
     text-align: center;
     font-size: 12px;
-    color: #00f0ff;
+    color: var(--color-verderesalto);
 }
 
 .registro__enlace a {
-    color: #00f0ff;
+    color: var(--color-verderesalto);
     text-decoration: none;
 }
 
 .registro__enlace a:hover {
-    background-color: #00f0ff;
-    color: black;
+    background-color: var(--color-verderesalto);
+    color: var(--color-fondotexto);
 }
 
 /*Carrito*/
 
 .carrito {
-    background: #09132b;
-    color: white;
+    background: var(--color-body);
+    color: var(--color-texto);
     padding: 20px;
 
 }
@@ -1405,8 +1419,8 @@ main {
 .juego-carrito__descuento {
     position: relative;
     text-align: left;
-    background-color: #1bc40c;
-    color: white;
+    background-color: var(--color-descuento);
+    color: var(--color-texto);
     padding: 4px 7px;
     border-radius: 2px;
     font-size: 11px;
@@ -1424,7 +1438,7 @@ main {
 }
 
 .juego-carrito__descripcion {
-    color: #00f0ff;
+    color: var(--color-verderesalto);
     font-size: 11px;
     line-height: 1.5;
     margin: 0 0 5px;
@@ -1449,8 +1463,8 @@ main {
 /*Resumen pedido*/
 
 .resumen {
-    background-color: #060a16;
-    border: 1px solid rgb(24, 23, 23);
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-bordes);
     border-radius: 2px;
     padding: 18px;
     width: 70%;
@@ -1473,11 +1487,11 @@ main {
     gap: 10px;
     margin: 7px 0;
     font-size: 11px;
-    color: white;
+    color: var(--color-texto);
 }
 
 .resumen__linea-descuento strong {
-    color: #00f0ff;
+    color: var(--color-verderesalto);
 }
 
 /* total */
@@ -1490,7 +1504,7 @@ main {
 }
 
 .resumen__total {
-    color: #00f0ff;
+    color: var(--color-verderesalto);
     font-size: 10px;
     font-weight: bold;
 }
@@ -1498,7 +1512,7 @@ main {
 .resumen__total-precio {
 
     font-size: 25px;
-    color: white;
+    color: var(--color-texto);
 }
 
 /* métodos de pago */
@@ -1533,8 +1547,8 @@ main {
     padding: 15px 8px;
     border: none;
     border-radius: 2px;
-    background-color: #072332;
-    color: #00f0ff;
+    background-color: var(--color-boton);
+    color: var(--color-verderesalto);
     font-size: 12px;
     font-weight: bold;
     cursor: pointer;
@@ -1548,8 +1562,8 @@ main {
 .registro__boton:hover,
 .resumen__pagar:hover,
 .resumen__metodo button:hover {
-    background-color: #00f0ff;
-    color: black;
+    background-color: var(--color-verderesalto);
+    color: var(--color-fondotexto);
 }
 
 .resumen__metodo span {
@@ -1557,4 +1571,71 @@ main {
 
 }
 
-/*Media Query*/
+/*Media Query tamaño mediano*/
+/* TABLETS */
+@media screen and (max-width: 1024px) {
+
+    .juegos-destacados {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pagina-categoria .catalogo-juegos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor-detalle,
+    .juego__resena {
+        grid-template-columns: 1fr;
+    }
+
+    .oferta__juego {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contenedor-principal,
+    .pagina-categoria,
+    .contenedor-detalle,
+    .contenedor-oferta,
+    .carrito {
+        width: 90%;
+    }
+}
+
+/* MÓVILES */
+@media screen and (max-width: 600px) {
+
+    .juegos-destacados,
+    .pagina-categoria .catalogo-juegos {
+        grid-template-columns: 1fr;
+    }
+
+    .oferta__juego {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor-principal,
+    .pagina-categoria,
+    .contenedor-detalle,
+    .contenedor-oferta,
+    .carrito {
+        width: 95%;
+    }
+
+    .resumen__metodos-lista {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navegacion__lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
