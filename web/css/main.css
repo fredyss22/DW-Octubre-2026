@@ -12,6 +12,7 @@
     --color-deportes: rgba(0, 128, 0, 0.534);
     --color-estrategia: rgba(0, 0, 255, 0.473);
     --color-boton: #072332;
+    --color-transparente: transparent;
 }
 
 /* colores 
@@ -158,7 +159,7 @@ main {
     display: flex;
     align-items: center;
     gap: 10px;
-    background: transparent;
+    background: var(--color-transparente);
     color: var(--color-texto);
     font-size: 15px;
     cursor: pointer;
@@ -277,7 +278,7 @@ main {
     gap: 8px;
     padding: 9px 15px;
     text-decoration: none;
-    background-color: transparent;
+    background-color: var(--color-transparente);
     border: 0.1px solid var(--color-verderesalto);
     border-radius: 5px;
     color: var(--color-verderesalto);
@@ -332,7 +333,7 @@ main {
     background-color: var(--color-busqueda);
     border: 1px solid var(--color-bordes);
     border-radius: 2px;
-    filter: var(--color-fondotexto)(5) brightness(0) invert(1);
+    filter: (5) brightness(0) invert(1);
     transition: filter 0.3s ease, transform 0.3s ease;
     margin-top: 12px;
 }
@@ -376,7 +377,7 @@ main {
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 20px;
-    var(--color-texto)-space: nowrap;
+    white-space: nowrap;
 }
 
 .pie-pagina__lista {
@@ -453,8 +454,8 @@ main {
 
 .exhibicion-juego__principal {
     width: 100%;
-    height: 100%;
-    min-height: 400px;
+    aspect-ratio: 16 / 9;
+    min-height: 0;
     border-radius: 2px;
 }
 
@@ -463,6 +464,7 @@ main {
     height: 100%;
     display: block;
     border-radius: 2px;
+    object-fit: cover;
 
 }
 
@@ -1211,7 +1213,7 @@ main {
     color: var(--color-texto);
     font-size: 12px;
     font-weight: bold;
-    var(--color-texto)-space: nowrap;
+    white-space: nowrap;
 
 }
 
@@ -1220,7 +1222,7 @@ main {
     padding: 9px 8px;
     border: 1px solid var(--color-bordes);
     font-size: 10px;
-    var(--color-texto)-space: nowrap;
+    white-space: nowrap;
 
 }
 
@@ -1575,6 +1577,31 @@ main {
 /* TABLETS */
 @media screen and (max-width: 1024px) {
 
+    .header-inicio__superior,
+    .header-inicio__inferior {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .buscador {
+        width: min(100%, 500px);
+    }
+
+    .pie-pagina__superior {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+    }
+
+    .contenedor-oferta .oferta:first-child {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .carrito__contenido,
+    .carrito__juegos,
+    .resumen {
+        width: 100%;
+    }
+
     .juegos-destacados {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1599,10 +1626,49 @@ main {
     .carrito {
         width: 90%;
     }
+
+    .oferta-categorias__lista {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 
 /* MÓVILES */
 @media screen and (max-width: 600px) {
+
+    .header-inicio__superior,
+    .header-inicio__inferior,
+    .header-inicio__izquierda {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .buscador {
+        width: 100%;
+    }
+
+    .pie-pagina__superior {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .pagina-categoria .catalogo {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .contenedor-oferta .oferta:first-child {
+        grid-template-columns: 1fr;
+    }
+
+    .exhibicion-juego__contenido {
+        grid-template-columns: minmax(0, 1fr);
+        margin-top: 30px;
+    }
+
+    .carrito__contenido,
+    .carrito__juegos,
+    .resumen {
+        width: 100%;
+    }
 
     .juegos-destacados,
     .pagina-categoria .catalogo-juegos {
@@ -1637,5 +1703,9 @@ main {
 
     h2 {
         font-size: 1.3rem;
+    }
+
+    .oferta-categorias__lista {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
